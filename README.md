@@ -6,6 +6,10 @@
 
 Local dev: `http://localhost:3000`
 
+## Website Preview
+
+[![NeuralVerse website preview](./docs/website-preview.png)](https://neural-verse-peach.vercel.app/)
+
 ---
 
 ## What's inside
