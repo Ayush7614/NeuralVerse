@@ -2,7 +2,9 @@
 
 > The personal blog of **Ayush Kumar** — a cyberpunk-neon, motion-first Next.js site built for blogs that deserve to feel alive.
 
-Live preview (local): `http://localhost:3000`
+**Live site:** [neural-verse-peach.vercel.app](https://neural-verse-peach.vercel.app/)
+
+Local dev: `http://localhost:3000`
 
 ---
 
@@ -116,27 +118,28 @@ Swap them for any palette and the entire site re-themes.
 
 ---
 
-## Wiring the contact form
+## Contact form & newsletter
 
-The contact form is a UI demo. To make it live, wire `ContactForm.tsx`'s `onSubmit` to:
+Both are wired to [Formspree](https://formspree.io). Copy `.env.example` to `.env.local` and set:
 
-- [Resend](https://resend.com) (recommended — 1-file API route)
-- [Formspree](https://formspree.io)
-- Your own `/api/contact/route.ts`
+```bash
+NEXT_PUBLIC_FORMSPREE_FORM_ID=your_form_id
+```
+
+For production (Vercel), add the same variable in **Project Settings → Environment Variables**.
 
 ---
 
 ## Deploying
 
-The site is 100% static and deploys to **Vercel**, **Netlify**, **Cloudflare Pages**, or any static host in one click. No environment variables required.
+**Production:** [https://neural-verse-peach.vercel.app/](https://neural-verse-peach.vercel.app/) (hosted on Vercel)
 
 ```bash
-# Vercel
+# Vercel CLI
 npx vercel --prod
-
-# Netlify
-npx netlify deploy --prod --dir=.next
 ```
+
+Remember to set `NEXT_PUBLIC_FORMSPREE_FORM_ID` in Vercel so the contact form and newsletter signup work in production.
 
 ---
 
