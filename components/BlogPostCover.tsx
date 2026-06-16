@@ -14,15 +14,23 @@ export function coverImageSrc(url: string): string {
 }
 
 export default function BlogPostCover({ src }: { src: string }) {
+  const imageSrc = coverImageSrc(src);
+
   return (
     <div className="relative z-10 aspect-[16/9] w-full shrink-0 overflow-hidden border-b border-white/10 bg-[#060912]">
       <img
-        src={coverImageSrc(src)}
+        src={imageSrc}
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-30 blur-2xl saturate-125"
+      />
+      <img
+        src={imageSrc}
         alt=""
         loading="lazy"
         decoding="async"
         referrerPolicy="no-referrer"
-        className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+        className="relative z-10 h-full w-full object-contain object-center p-2 transition-transform duration-500 group-hover:scale-[1.02] sm:p-3"
       />
     </div>
   );

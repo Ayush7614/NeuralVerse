@@ -40,6 +40,7 @@ export default function BlogCard({
 
   return (
     <motion.article
+      className="h-full"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
@@ -52,7 +53,7 @@ export default function BlogCard({
         style={{ rotateX: rotX, rotateY: rotY, transformStyle: "preserve-3d" }}
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18 }}
-        className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-shadow hover:border-neon-cyan/40 hover:shadow-neon"
+        className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-shadow hover:border-neon-cyan/40 hover:shadow-neon"
       >
         <motion.div
           style={{ background: spotlight }}
@@ -61,7 +62,7 @@ export default function BlogCard({
 
         {cover && <BlogPostCover src={cover} />}
 
-        <div className="relative z-10 flex h-full flex-col p-6">
+        <div className="relative z-10 flex flex-1 flex-col p-6">
           <div className="mb-4 flex items-center justify-between gap-2 text-xs text-white/50">
             <time className="font-mono">{formatDate(post.date)}</time>
             <span className="inline-flex items-center gap-1.5">
@@ -74,7 +75,7 @@ export default function BlogCard({
             external={isExternal}
             className="block"
           >
-            <h3 className="font-display text-xl font-bold leading-tight text-white transition-colors group-hover:text-neon-cyan sm:text-2xl">
+            <h3 className="line-clamp-3 min-h-[4.75rem] font-display text-xl font-bold leading-tight text-white transition-colors group-hover:text-neon-cyan sm:min-h-[5.75rem] sm:text-2xl">
               {post.title}
             </h3>
           </CardLink>
@@ -91,7 +92,7 @@ export default function BlogCard({
             ))}
           </div>
 
-          <div className="mt-6 flex items-center justify-between gap-3">
+          <div className="mt-auto flex items-center justify-between gap-3 pt-6">
             <CardLink
               href={href}
               external={isExternal}
