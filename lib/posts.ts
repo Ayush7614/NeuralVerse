@@ -1577,6 +1577,20 @@ const rawPosts = [
 
   // ──────────────────────────── June 2026 (Medium batch 4) ────────────────────────────
   {
+    slug: "harness-engineering-full-visual-guide",
+    title: "Harness Engineering — Full Visual Guide",
+    excerpt:
+      "The model is smart — the harness makes it reliable. A visual guide to instructions, state, verification, scope, and session lifecycle for coding agents that finish with proof, not vibes.",
+    date: "2026-06-16",
+    readingTime: 8,
+    tags: ["AI", "Agents", "Engineering", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/harness-engineering-full-visual-guide-9a8de52b42d2",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*WPasMPesFFfCNiLSSgdbaQ.png",
+      platform: "Medium",
+    },
+  },
+  {
     slug: "loop-engineering-goal-driven-ai-agents",
     title:
       "Loop Engineering Explained Visually: From Manual Prompts to Goal-Driven AI Agents",
