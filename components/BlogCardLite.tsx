@@ -10,12 +10,12 @@ export default function BlogCardLite({ post }: { post: Post }) {
   const cover = post.external?.image;
 
   return (
-    <article className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-neon-cyan/40 hover:shadow-neon">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-neon-cyan/40 hover:shadow-neon">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-cyan/10 via-transparent to-neon-magenta/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       {cover && <BlogPostCover src={cover} />}
 
-      <div className="relative z-10 flex h-full flex-col p-6">
+      <div className="relative z-10 flex flex-1 flex-col p-6">
         <div className="mb-4 flex items-center justify-between gap-2 text-xs text-white/50">
           <time className="font-mono" dateTime={post.date}>
             {formatDate(post.date)}
@@ -26,7 +26,7 @@ export default function BlogCardLite({ post }: { post: Post }) {
         </div>
 
         <CardLink href={href} external={isExternal} className="block">
-          <h3 className="font-display text-xl font-bold leading-tight text-white transition-colors group-hover:text-neon-cyan sm:text-2xl">
+          <h3 className="line-clamp-3 min-h-[4.75rem] font-display text-xl font-bold leading-tight text-white transition-colors group-hover:text-neon-cyan sm:min-h-[5.75rem] sm:text-2xl">
             {post.title}
           </h3>
         </CardLink>
@@ -43,7 +43,7 @@ export default function BlogCardLite({ post }: { post: Post }) {
           ))}
         </div>
 
-        <div className="mt-6 flex items-center justify-between gap-3">
+        <div className="mt-auto flex items-center justify-between gap-3 pt-6">
           <CardLink
             href={href}
             external={isExternal}
