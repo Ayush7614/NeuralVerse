@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Clock, ExternalLink } from "lucide-react";
 import type { Post } from "@/lib/posts";
+import BlogPostCover from "./BlogPostCover";
 
 /** Lightweight card for the blog index — CSS-only hover, no per-card motion hooks. */
 export default function BlogCardLite({ post }: { post: Post }) {
@@ -12,19 +13,7 @@ export default function BlogCardLite({ post }: { post: Post }) {
     <article className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-neon-cyan/40 hover:shadow-neon">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-cyan/10 via-transparent to-neon-magenta/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-      {cover && (
-        <div className="relative z-10">
-          <div className="aspect-[16/9] w-full overflow-hidden border-b border-white/10 bg-white/[0.02]">
-            <img
-              src={cover}
-              alt=""
-              loading="lazy"
-              referrerPolicy="no-referrer"
-              className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-[1.03]"
-            />
-          </div>
-        </div>
-      )}
+      {cover && <BlogPostCover src={cover} />}
 
       <div className="relative z-10 flex h-full flex-col p-6">
         <div className="mb-4 flex items-center justify-between gap-2 text-xs text-white/50">

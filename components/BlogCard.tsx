@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { ArrowUpRight, Clock, ExternalLink } from "lucide-react";
 import type { Post } from "@/lib/posts";
+import BlogPostCover from "./BlogPostCover";
 
 export default function BlogCard({
   post,
@@ -58,19 +59,7 @@ export default function BlogCard({
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
         />
 
-        {cover && (
-          <div className="relative z-10">
-            <div className="aspect-[16/9] w-full overflow-hidden border-b border-white/10 bg-white/[0.02]">
-              <img
-                src={cover}
-                alt=""
-                loading="lazy"
-                referrerPolicy="no-referrer"
-                className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-[1.03]"
-              />
-            </div>
-          </div>
-        )}
+        {cover && <BlogPostCover src={cover} />}
 
         <div className="relative z-10 flex h-full flex-col p-6">
           <div className="mb-4 flex items-center justify-between gap-2 text-xs text-white/50">
