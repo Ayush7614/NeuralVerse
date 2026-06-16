@@ -9,6 +9,7 @@ export type Post = {
   tags: string[];
   external?: {
     url: string;
+    image?: string;
     platform: Platform;
   };
   /** Optional inline markdown body — only used for internally-hosted posts. */
@@ -31,6 +32,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-run-embeddinggemma-300m-locally-223a",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fib3uchvtqealw0om728i.png",
       platform: "dev.to",
     },
   },
@@ -44,6 +46,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/the-open-source-app-builder-that-ate-saas-dyad-ollama-setup-47o2",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffkhr4wge9oq5pkn7mani.jpg",
       platform: "dev.to",
     },
   },
@@ -57,6 +60,7 @@ const rawPosts = [
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/zero-to-docs-hero-create-a-python-documentation-generator-with-gpt-5-1jaj",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Flkd9ibsm3s8zg0mdi1h0.png",
       platform: "dev.to",
     },
   },
@@ -70,6 +74,7 @@ const rawPosts = [
     tags: ["AI", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/how-i-built-a-gpt-oss-120b-parameter-coding-beast-that-reviews-fixes-and-writes-code-like-magic-4jog",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpcx30pb50vncv55bmhay.png",
       platform: "dev.to",
     },
   },
@@ -83,6 +88,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-devstral-small-11-locally-je9",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnm0i61j5z8m10ch4qgsg.jpg",
       platform: "dev.to",
     },
   },
@@ -96,6 +102,7 @@ const rawPosts = [
     tags: ["Security", "LLMs", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/llms-under-fire-red-teaming-with-deepteam-ollama-3l1i",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2xvvdhfpqszl9nahpvrr.jpg",
       platform: "dev.to",
     },
   },
@@ -109,6 +116,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-deepseek-nano-vllm-locally-hne",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhnvg2dbfmxwk5w4d3a28.jpg",
       platform: "dev.to",
     },
   },
@@ -122,6 +130,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-fanar-1-9b-arabic-english-llm-locally-gol",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8oc342pocwrvhtljtn3b.png",
       platform: "dev.to",
     },
   },
@@ -135,6 +144,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-and-run-sarvam-m-locally-2b0i",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4cdpopitji1bbi6oepso.jpg",
       platform: "dev.to",
     },
   },
@@ -148,6 +158,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-nvidia-acereason-nemotron-14b-locally-141i",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fl69joiwxwjcfmxl5swi6.jpg",
       platform: "dev.to",
     },
   },
@@ -161,6 +172,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-nanovlm-worlds-smallest-model-locally-27eg",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhlb4e6ni0by9ke94hzx5.webp",
       platform: "dev.to",
     },
   },
@@ -174,6 +186,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-smoldocling-256m-preview-locally-11a1",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fb04muxfq29y6ykm40hr3.jpg",
       platform: "dev.to",
     },
   },
@@ -187,6 +200,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-qwen3-32b-gguf-locally-1d82",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwumhw4y4sbhd8yilqu19.jpg",
       platform: "dev.to",
     },
   },
@@ -200,6 +214,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-meta-perception-lm-8b-locally-662",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbz2jlvgw4s640kx33dza.jpeg",
       platform: "dev.to",
     },
   },
@@ -213,6 +228,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-nvidia-parakeet-tdt-06b-v2-locally-36ck",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F704nqfs445mpk7kgs6fb.jpeg",
       platform: "dev.to",
     },
   },
@@ -226,6 +242,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-nari-dia-16-b-locally-3f0b",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fjzyuvy8e7sn6e9w903fa.jpeg",
       platform: "dev.to",
     },
   },
@@ -239,6 +256,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-falcon-3-locally-3nhm",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgzl0bpdbm3jx66y2b4ip.jpeg",
       platform: "dev.to",
     },
   },
@@ -252,6 +270,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-google-paligemma-2-locally-21ci",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fn0u6n32et0yaea6ve0be.jpg",
       platform: "dev.to",
     },
   },
@@ -265,6 +284,7 @@ const rawPosts = [
     tags: ["Open Source", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/run-langtrace-open-source-observability-tool-for-llm-applications-2p11",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh1iswdj6xlmn0atfkeyl.jpg",
       platform: "dev.to",
     },
   },
@@ -278,6 +298,7 @@ const rawPosts = [
     tags: ["Open Source", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/running-ai-models-with-open-webui-4nil",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F23r9qw7m6drr2wv5vsp1.jpg",
       platform: "dev.to",
     },
   },
@@ -291,6 +312,7 @@ const rawPosts = [
     tags: ["DevOps", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/40-linux-commands-you-need-to-know-the-ultimate-guide-for-ubuntu-users-2c6j",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffiqfiihefsprh1s53ezm.png",
       platform: "dev.to",
     },
   },
@@ -304,6 +326,7 @@ const rawPosts = [
     tags: ["AI", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/best-low-code-platforms-for-building-applications-in-2024-203e",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpn3untrjf0448d2mju7q.png",
       platform: "dev.to",
     },
   },
@@ -317,6 +340,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-llama-31-405b-in-the-cloud-2d2i",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxj63vg7tiacpanjteu5m.png",
       platform: "dev.to",
     },
   },
@@ -330,6 +354,7 @@ const rawPosts = [
     tags: ["AI", "Tutorial", "Local LLMs"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-and-run-auraflow-image-generator-locally-1652",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6b0j82x2p3uw3cq52wj4.jpg",
       platform: "dev.to",
     },
   },
@@ -343,6 +368,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-molmo-7b-d-0924-in-the-cloud-5824",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5k9cid86gicz0jclpc1b.png",
       platform: "dev.to",
     },
   },
@@ -356,6 +382,7 @@ const rawPosts = [
     tags: ["DevOps", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-configure-wireguard-vpn-in-the-cloud-5eea",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F71fjlpe8v3ggl5llpbnk.png",
       platform: "dev.to",
     },
   },
@@ -369,6 +396,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-llama-31-nemotron-70b-instruct-on-a-virtual-machine-in-the-cloud-3777",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fi9290w4i360q1cdz790f.jpg",
       platform: "dev.to",
     },
   },
@@ -382,6 +410,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-pixtral-12b-in-the-cloud-6c0",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh59kpbbxm1fh8i8yi9g9.png",
       platform: "dev.to",
     },
   },
@@ -395,6 +424,7 @@ const rawPosts = [
     tags: ["DevOps", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/running-a-dedicated-ethereum-rpc-node-in-a-virtual-machine-2fk4",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Flsqwxuvb38165ncm6nrt.png",
       platform: "dev.to",
     },
   },
@@ -408,6 +438,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-granite-moe-1b-and-3b-in-the-cloud-4o7c",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Feg300tii2unoyu6xk036.jpg",
       platform: "dev.to",
     },
   },
@@ -421,6 +452,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-solar-pro-22b-in-the-cloud-21ec",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgoxpttbwxkrn7y1wcuoo.jpg",
       platform: "dev.to",
     },
   },
@@ -434,6 +466,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-granite-dense-2b-and-8b-on-a-virtual-machine-in-the-cloud-2k2d",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwz21pjky6yg72948k72h.png",
       platform: "dev.to",
     },
   },
@@ -447,6 +480,7 @@ const rawPosts = [
     tags: ["AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-run-for-inference-llama-31-nemotron-51b-instruct-kcm",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc4tzticfrpzhawem0f50.png",
       platform: "dev.to",
     },
   },
@@ -460,6 +494,7 @@ const rawPosts = [
     tags: ["DevOps", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-minikube-on-ubuntu-virtual-machine-207e",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6xf0o2mxhpdw38zmjc2b.jpg",
       platform: "dev.to",
     },
   },
@@ -473,6 +508,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-internvl2-2b-in-the-cloud-39a5",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F7kg03q7s6da4a8hn28jk.png",
       platform: "dev.to",
     },
   },
@@ -486,6 +522,7 @@ const rawPosts = [
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-smollm2-17b-on-a-virtual-machine-in-the-cloud-with-ollama-5eke",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F91abi8y9gp8rk11njem1.jpeg",
       platform: "dev.to",
     },
   },
@@ -499,6 +536,7 @@ const rawPosts = [
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-run-microsoft-kosmos-25-locally-l5a",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4cdcphkkg0fw0zc2sgis.png",
       platform: "dev.to",
     },
   },
@@ -512,6 +550,7 @@ const rawPosts = [
     tags: ["Security", "LLMs", "AI"],
     external: {
       url: "https://dev.to/ayush7614/deepseek-v31-meets-promptfoo-jailbreaks-biases-beyond-4270",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5oisrg918g3nymzd6rai.png",
       platform: "dev.to",
     },
   },
@@ -525,6 +564,7 @@ const rawPosts = [
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/the-gpt-5-paradox-genius-in-thought-gaps-in-safety-100p",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5gwci47d82rk14uunhkp.png",
       platform: "dev.to",
     },
   },
@@ -538,6 +578,7 @@ const rawPosts = [
     tags: ["Security", "LLMs", "AI"],
     external: {
       url: "https://dev.to/ayush7614/reproducible-llm-benchmarking-gpt-5-vs-grok-4-with-promptfoo-4i3c",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc2v3t57vknl0u22dko2z.png",
       platform: "dev.to",
     },
   },
@@ -551,6 +592,7 @@ const rawPosts = [
     tags: ["AI", "Tutorial", "Local LLMs"],
     external: {
       url: "https://dev.to/nodeshiftcloud/the-ocr-model-that-outranks-gpt-4o-586b",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpzwi7g63i3uh6uhpm7dn.png",
       platform: "dev.to",
     },
   },
@@ -564,6 +606,7 @@ const rawPosts = [
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/the-one-click-gpt-5-code-machine-how-i-built-my-own-ai-developer-4j0n",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkehnirvpvsbr8bz4l8dj.png",
       platform: "dev.to",
     },
   },
@@ -577,6 +620,7 @@ const rawPosts = [
     tags: ["AI", "Tutorial", "DevTools"],
     external: {
       url: "https://dev.to/ayush7614/100-game-changing-chatgpt-prompts-for-developers-product-managers-designers-and-email-marketers-1c5i",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgl3khpc1tou6if1zsmrk.png",
       platform: "dev.to",
     },
   },
@@ -593,6 +637,7 @@ const rawPosts = [
     tags: ["Security", "AI", "MCP", "LLMs"],
     external: {
       url: "https://medium.com/the-first-digit/medusa-ai-security-scanner-complete-guide-to-securing-ai-agents-mcp-servers-and-llm-applications-4b10548b90f2",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*dWXtY6CZN8VWjTMKDiaBRA.png",
       platform: "Medium",
     },
   },
@@ -607,6 +652,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Tutorial"],
     external: {
       url: "https://medium.com/coinmonks/tradingagents-build-a-multi-agent-ai-trading-system-that-thinks-like-a-hedge-fund-5be2301c83d2",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*MkFPFEtyW63r0LBuPGrvIA.png",
       platform: "Medium",
     },
   },
@@ -621,6 +667,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Agents"],
     external: {
       url: "https://medium.com/the-first-digit/pentest-ai-the-complete-guide-to-ai-powered-autonomous-penetration-testing-in-2026-10754ee997d6",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*lEzuhRX6Hry5X23Q91J9Gw.png",
       platform: "Medium",
     },
   },
@@ -635,6 +682,7 @@ const rawPosts = [
     tags: ["Security", "Tutorial"],
     external: {
       url: "https://medium.com/the-first-digit/the-ultimate-guide-to-hacker-search-engines-osint-tools-in-2026-ad2f9ab2684d",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*FFDrTZO5LIGRgfcdb8mILA.png",
       platform: "Medium",
     },
   },
@@ -649,6 +697,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Agents", "DevTools"],
     external: {
       url: "https://medium.com/the-first-digit/pentest-ai-agents-28-specialized-ai-subagents-that-turn-claude-code-into-a-cybersecurity-94c0914da6ca",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*scbhIY9wqtZPYqGKoTPGXA.png",
       platform: "Medium",
     },
   },
@@ -663,6 +712,7 @@ const rawPosts = [
     tags: ["Security", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/25-open-source-cybersecurity-tools-that-work-even-when-your-budget-doesnt-2594b363ffb3",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*FGCDyVMat7j28SzgDY50Rg.png",
       platform: "Medium",
     },
   },
@@ -677,6 +727,7 @@ const rawPosts = [
     tags: ["Open Source", "Engineering", "AI"],
     external: {
       url: "https://medium.com/faun/the-solo-engineer-stack-how-10-open-source-repos-can-replace-an-entire-engineering-team-in-2026-162440acc3cc",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*faHSAcsRZBeQ078OojWqmg.png",
       platform: "Medium",
     },
   },
@@ -691,6 +742,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/towardsdev/these-6-open-source-ai-agents-are-next-level-and-theyre-changing-how-we-build-software-2480ec83b3dc",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*J6BH_jY1v7-HDJodxoOKnA.png",
       platform: "Medium",
     },
   },
@@ -705,6 +757,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "DevTools"],
     external: {
       url: "https://medium.com/faun/i-replaced-codex-with-gemma-4-ollama-heres-my-local-ai-coding-agent-e18307e35d6f",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*j1Z3pSnajTeZFdxb-TNf2Q.png",
       platform: "Medium",
     },
   },
@@ -719,6 +772,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/faun/emerging-ai-agent-frameworks-developers-should-watch-in-2026-part-2-92d49e75e867",
+      image: "https://miro.medium.com/v2/resize:fit:720/1*KYOxnZaKtOoNqzSdwt5XTQ.png",
       platform: "Medium",
     },
   },
@@ -733,6 +787,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Tutorial"],
     external: {
       url: "https://medium.com/faun/ai-web-browsers-agents-in-2026-the-complete-selection-guide-54473dd879dd",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*FmCyeKB6ysotpxP4NBs-pA.png",
       platform: "Medium",
     },
   },
@@ -747,6 +802,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/faun/the-open-source-claude-managed-agents-alternative-is-here-meet-multica-7035cca69a5d",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*zifVRC4hhA62xYUZlFVLng.png",
       platform: "Medium",
     },
   },
@@ -761,6 +817,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/faun/mastra-ai-the-modern-framework-for-building-production-ready-ai-agents-f7f39664c9ad",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*yVq8P3a2sYIxiND3L-wYdQ.png",
       platform: "Medium",
     },
   },
@@ -775,6 +832,7 @@ const rawPosts = [
     tags: ["Local AI", "AI", "Tutorial"],
     external: {
       url: "https://medium.com/faun/gaia-by-amd-running-intelligent-systems-fully-on-your-own-machine-04da1dc420a5",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*I1qdNsC20l5f6tEVpWymfQ.png",
       platform: "Medium",
     },
   },
@@ -789,6 +847,7 @@ const rawPosts = [
     tags: ["AI", "LLMs", "Agents", "DevOps"],
     external: {
       url: "https://medium.com/towardsdev/top-19-llm-observability-tools-to-monitor-evaluate-ai-agents-2026-guide-9096d4b857ae",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*fPiu40bVQ1amKV-G_Kyv2w.png",
       platform: "Medium",
     },
   },
@@ -803,6 +862,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/faun/the-open-source-ai-agent-frameworks-that-deserve-more-stars-on-github-6f1fd0e3fc99",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*1zln3QJq45MYBOHsrRtZJg.png",
       platform: "Medium",
     },
   },
@@ -817,6 +877,7 @@ const rawPosts = [
     tags: ["Tutorial", "DevOps"],
     external: {
       url: "https://medium.com/the-first-digit/archinstall-4-0-a-modern-new-way-to-install-arch-linux-full-guide-features-44d0aaf1309e",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*AK9dSM_ncVy8zkHXvtu7vQ.png",
       platform: "Medium",
     },
   },
@@ -831,6 +892,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Agents"],
     external: {
       url: "https://medium.com/the-first-digit/cybersecurity-ai-cai-the-future-of-ai-powered-security-automation-b7ffd25b5c93",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*HtRNF-N2c_QX15I-PbTH-w.png",
       platform: "Medium",
     },
   },
@@ -845,6 +907,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/towardsdev/agentscope-building-real-world-ai-agents-that-actually-work-2ace602ab387",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*1a83TEfkGxAmBNA3RuNeVg.png",
       platform: "Medium",
     },
   },
@@ -859,6 +922,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "LLMs"],
     external: {
       url: "https://medium.com/faun/openviking-explained-reinventing-memory-and-context-for-ai-agents-c189b2bea61b",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*FFXQGHRduJsL4Tj9spCHDg.png",
       platform: "Medium",
     },
   },
@@ -873,6 +937,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/strix-the-open-source-hacker-that-tests-your-app-like-a-real-attacker-4217e0c9e843",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*8UbfYEbD5Kh1ZgK7TkXUBw.png",
       platform: "Medium",
     },
   },
@@ -887,6 +952,7 @@ const rawPosts = [
     tags: ["Security", "Tutorial"],
     external: {
       url: "https://medium.com/the-first-digit/the-modern-mobile-pentesting-stack-in-2026-tools-trends-practical-workflows-c6a61aa01a36",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*OI3bbnLaAQ6IaYy-T-L1Fw.png",
       platform: "Medium",
     },
   },
@@ -901,6 +967,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/the-rise-of-ai-driven-pentesting-8-open-source-tools-security-teams-should-watch-in-2026-e849c8171450",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*kGnuK7XcYnpI7t7QFPNmOA.png",
       platform: "Medium",
     },
   },
@@ -915,6 +982,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "LLMs"],
     external: {
       url: "https://medium.com/faun/hindsight-the-future-of-ai-agent-memory-beyond-vector-databases-0e8745ff4b38",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*UoNLWkW1cfP6FqrjNasoCQ.png",
       platform: "Medium",
     },
   },
@@ -929,6 +997,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/faun/openclaw-the-journey-from-a-weekend-hack-to-a-personal-ai-platform-you-truly-own-76ce9395a315",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*EFZbh0s3MdOAyehvmZRtug.png",
       platform: "Medium",
     },
   },
@@ -943,6 +1012,7 @@ const rawPosts = [
     tags: ["LLMs", "DevOps", "Local AI"],
     external: {
       url: "https://medium.com/faun/11-production-llm-serving-engines-vllm-vs-tgi-vs-ollama-162874402840",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*Jw_6jSiefEW6qw8FM1wkoA.png",
       platform: "Medium",
     },
   },
@@ -957,6 +1027,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/@techlatest.net/ai-agent-arsenal-20-battle-tested-open-source-powerhouses-ea3d4534d264",
+      image: "https://miro.medium.com/v2/resize:fit:700/0*dv_p_iOPVscnIT8q.png",
       platform: "Medium",
     },
   },
@@ -972,6 +1043,7 @@ const rawPosts = [
     tags: ["MCP", "AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/towardsdev/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c",
+      image: "https://miro.medium.com/v2/resize:fit:1024/0*z5Re4a_BqVNumqZj.png",
       platform: "Medium",
     },
   },
@@ -986,6 +1058,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source", "Local AI"],
     external: {
       url: "https://medium.com/faun/20-free-open-source-ai-tools-to-run-production-grade-agents-without-paying-llm-apis-in-2026-5f1ffdcbcc18",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*PB9xBPthVyC9W4ZjQfX1fQ.png",
       platform: "Medium",
     },
   },
@@ -999,6 +1072,7 @@ const rawPosts = [
     tags: ["Red Teaming", "Security", "LLMs", "Promptfoo"],
     external: {
       url: "https://dev.to/ayush7614/the-untold-misadventures-of-red-teaming-kimi-k2-with-promptfoo-3hig",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F22p8txkyac31l3r8hozs.png",
       platform: "dev.to",
     },
   },
@@ -1013,6 +1087,7 @@ const rawPosts = [
     tags: ["Red Teaming", "Security", "LLMs", "Promptfoo"],
     external: {
       url: "https://dev.to/ayush7614/promptfoo-x-qwen3-coder-unmasking-vulnerabilities-in-480-billion-parameters-17hb",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgy73wfghew8i45ryzm0a.png",
       platform: "dev.to",
     },
   },
@@ -1026,6 +1101,7 @@ const rawPosts = [
     tags: ["Red Teaming", "Security", "LLMs", "Promptfoo"],
     external: {
       url: "https://dev.to/ayush7614/glm-45-vs-promptfoo-a-playbook-for-systematic-llm-security-audits-27ln",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fp08su003f9t5znj2j1oc.png",
       platform: "dev.to",
     },
   },
@@ -1039,6 +1115,7 @@ const rawPosts = [
     tags: ["Red Teaming", "Security", "Local AI", "LLMs"],
     external: {
       url: "https://nodeshift.com/blog/llms-under-fire-red-teaming-with-deepteam-ollama",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2xvvdhfpqszl9nahpvrr.jpg",
       platform: "NodeShift",
     },
   },
@@ -1053,6 +1130,7 @@ const rawPosts = [
     tags: ["Red Teaming", "Security", "LLMs", "Open Source"],
     external: {
       url: "https://dev.to/ayush7614/promptfoo-vs-deepteam-vs-pyrit-vs-garak-the-ultimate-red-teaming-showdown-for-llms-48if",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2b6m92vpt5ersekb9dj1.png",
       platform: "dev.to",
     },
   },
@@ -1067,6 +1145,7 @@ const rawPosts = [
     tags: ["Red Teaming", "LLMs", "Local AI", "Promptfoo"],
     external: {
       url: "https://dev.to/ayush7614/promptfoo-x-ollama-x-deepseek-r1-turning-my-model-into-a-cyber-warzone-3ef5",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Funnpgpm6kskvg94c4083.png",
       platform: "dev.to",
     },
   },
@@ -1080,6 +1159,7 @@ const rawPosts = [
     tags: ["LLMs", "Local AI", "Promptfoo", "Tutorial"],
     external: {
       url: "https://dev.to/ayush7614/from-openai-to-ollama-visual-llm-evaluations-with-promptfoo-2k03",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F7ietvecathrx9ngd5d0t.png",
       platform: "dev.to",
     },
   },
@@ -1094,6 +1174,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "LLMs", "Promptfoo"],
     external: {
       url: "https://dev.to/ayush7614/how-i-built-and-evaluated-an-ai-book-writing-system-with-acp-and-promptfoo-18np",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnfiotfobaj5h8qlujb6p.png",
       platform: "dev.to",
     },
   },
@@ -1109,6 +1190,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-run-openai-gpt-oss-locally-1lf0",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpv7sp0ree7sga9ar70se.jpg",
       platform: "dev.to",
     },
   },
@@ -1122,6 +1204,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-run-gpt-oss-20b-and-120b-gguf-locally-3833",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv05bflyftwa0ao1xlvum.jpg",
       platform: "dev.to",
     },
   },
@@ -1135,6 +1218,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://nodeshift.cloud/blog/how-to-install-run-qwen3-coder-480b-a35b-instruct-locally",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fgy73wfghew8i45ryzm0a.png",
       platform: "NodeShift",
     },
   },
@@ -1148,6 +1232,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://nodeshift.cloud/blog/how-to-install-run-deepseek-v3-1-gguf-locally",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5oisrg918g3nymzd6rai.png",
       platform: "NodeShift",
     },
   },
@@ -1161,6 +1246,7 @@ const rawPosts = [
     tags: ["LLMs", "DevTools", "AI"],
     external: {
       url: "https://dev.to/nodeshiftcloud/claude-4-opus-vs-sonnet-benchmarks-and-dev-workflow-with-claude-code-11fa",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkcwkhm3hht1ohpc4alt7.png",
       platform: "dev.to",
     },
   },
@@ -1175,6 +1261,7 @@ const rawPosts = [
     tags: ["DevTools", "Open Source", "AI", "Tutorial"],
     external: {
       url: "https://medium.com/faun/ultimate-hands-on-guide-to-opencode-open-source-claude-code-alternative-37af8f8928cb",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*tn3V6JTyp0_2K0vpzee51w.png",
       platform: "Medium",
     },
   },
@@ -1189,6 +1276,7 @@ const rawPosts = [
     tags: ["DevTools", "Local AI", "Open Source"],
     external: {
       url: "https://dev.to/nodeshiftcloud/void-ollama-llms-how-i-turned-my-code-editor-into-a-full-blown-ai-workbench-eop",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fq1rsmav1qwpjyndobu7r.png",
       platform: "dev.to",
     },
   },
@@ -1203,6 +1291,7 @@ const rawPosts = [
     tags: ["DevTools", "Local AI", "DevOps"],
     external: {
       url: "https://dev.to/nodeshiftcloud/zed-ollama-llms-on-a-gpu-vm-the-ultimate-local-dev-setup-for-serious-coders-18pd",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqh1lvcxx3igos3noqd54.jpg",
       platform: "dev.to",
     },
   },
@@ -1217,6 +1306,7 @@ const rawPosts = [
     tags: ["Agents", "AI", "Open Source", "DevTools"],
     external: {
       url: "https://dev.to/nodeshiftcloud/build-an-app-with-ai-in-minutes-using-openhands-ai-engineer-install-locally-2ogi",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fljg6cjpbqcrdivxjde98.jpeg",
       platform: "dev.to",
     },
   },
@@ -1230,6 +1320,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Agents", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/step-by-step-guide-to-run-llama-4-locally-with-tool-calling-enabled-jg7",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo7fz3d6thg31u885s2cv.png",
       platform: "dev.to",
     },
   },
@@ -1243,6 +1334,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-llama-33-70b-instruct-locally-3p1a",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fmtaelyr5qmomb4982ah0.jpg",
       platform: "dev.to",
     },
   },
@@ -1257,6 +1349,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/mastering-deepseek-installing-tiny-small-and-vl2-models-with-inference-and-a-gradio-interface-4d2m",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnewmtzhajzd1pkkkmxa5.jpeg",
       platform: "dev.to",
     },
   },
@@ -1270,6 +1363,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-deepseek-janus-pro-7b-locally-5924",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5vw9wymks6dt7bq1vrkc.jpg",
       platform: "dev.to",
     },
   },
@@ -1283,6 +1377,7 @@ const rawPosts = [
     tags: ["LLMs", "DevOps", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-deploy-qwen25-coder-32b-instruct-in-the-cloud-4o9m",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Feb3aovpahy8szqaop7se.jpg",
       platform: "dev.to",
     },
   },
@@ -1296,6 +1391,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Agents", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/ollama-and-web-llm-building-your-own-local-ai-search-assistant-3l5o",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4cqlatemvu38g552w7nk.jpg",
       platform: "dev.to",
     },
   },
@@ -1309,6 +1405,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://nodeshift.com/blog/how-to-install-mistral-magistral-locally",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnm0i61j5z8m10ch4qgsg.jpg",
       platform: "NodeShift",
     },
   },
@@ -1322,6 +1419,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
       url: "https://nodeshift.com/blog/how-to-install-mistral-voxtral-locally",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4cdcphkkg0fw0zc2sgis.png",
       platform: "NodeShift",
     },
   },
@@ -1337,6 +1435,7 @@ const rawPosts = [
     tags: ["Image Gen", "AI", "Tutorial"],
     external: {
       url: "https://nodeshift.cloud/blog/how-to-install-run-tencent-hunyuan3d-world-1-0-locally",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr79gdej4d5x2xtd4kosa.jpg",
       platform: "NodeShift",
     },
   },
@@ -1350,6 +1449,7 @@ const rawPosts = [
     tags: ["Image Gen", "Local AI", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-install-flux1-kontext-dev-locally-1b0d",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr79gdej4d5x2xtd4kosa.jpg",
       platform: "dev.to",
     },
   },
@@ -1363,6 +1463,7 @@ const rawPosts = [
     tags: ["Image Gen", "Cloud", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/how-to-run-flux-1-schnell-and-pro-image-generator-in-the-cloud-4d7h",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdlcg07ogr7kowzpk2h4q.png",
       platform: "dev.to",
     },
   },
@@ -1378,6 +1479,7 @@ const rawPosts = [
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
       url: "https://dev.to/nodeshiftcloud/building-an-ai-powered-chest-x-ray-analyzer-with-medgemma-27b-and-gradio-21cd",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqq51s2o8dw35z4y4vbiz.jpg",
       platform: "dev.to",
     },
   },
@@ -1392,6 +1494,7 @@ const rawPosts = [
     tags: ["AI", "DevOps", "Cloud"],
     external: {
       url: "https://nodeshift.com/blog/how-i-built-a-cloud-time-series-forecaster-with-datadog-toto-open-base-1-0",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh1iswdj6xlmn0atfkeyl.jpg",
       platform: "NodeShift",
     },
   },
@@ -1407,6 +1510,7 @@ const rawPosts = [
     tags: ["Security", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/vulhunt-open-source-vulnerability-hunting-framework-bde9cdb66dab",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*-s4BhRzxp1UcSKOD0Ij8xA.png",
       platform: "Medium",
     },
   },
@@ -1420,6 +1524,7 @@ const rawPosts = [
     tags: ["Security", "Tutorial"],
     external: {
       url: "https://medium.com/the-first-digit/top-50-must-know-blackarch-linux-tools-for-penetration-testing-bbf49e81cef2",
+      image: "https://miro.medium.com/v2/0*UeeEmhqr8MjK9gcg.jpeg",
       platform: "Medium",
     },
   },
@@ -1434,6 +1539,7 @@ const rawPosts = [
     tags: ["Security", "Tutorial"],
     external: {
       url: "https://medium.com/the-first-digit/top-15-kali-linux-gui-tools-every-security-engineer-must-master-with-real-use-cases-d3412e9867fd",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*rsR4P-bb_9BlCNeayqGVFA.png",
       platform: "Medium",
     },
   },
@@ -1449,6 +1555,7 @@ const rawPosts = [
     tags: ["DevOps", "Cloud"],
     external: {
       url: "https://nodeshift.com/blog/running-a-dedicated-ethereum-rpc-node-in-a-virtual-machine",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Flsqwxuvb38165ncm6nrt.png",
       platform: "NodeShift",
     },
   },
@@ -1463,6 +1570,7 @@ const rawPosts = [
     tags: ["DevOps", "Tutorial"],
     external: {
       url: "https://nodeshift.com/blog/how-to-backup-virtual-machines-to-object-storage-with-borg-borgmatic-rclone-and-crons-rsync",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnp3mis8r4e413hrqdlee.jpg",
       platform: "NodeShift",
     },
   },
@@ -1479,6 +1587,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/loop-engineering-explained-visually-from-manual-prompts-to-goal-driven-ai-agents-f2c4d634c261",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*rBJzUuT_LA4TmrDS78vCCw.png",
       platform: "Medium",
     },
   },
@@ -1492,6 +1601,7 @@ const rawPosts = [
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/when-to-fine-tune-an-llm-and-when-prompting-is-enough-c32d53261ac7",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*77WkckdxZOrNqgn3NjooJA.png",
       platform: "Medium",
     },
   },
@@ -1505,6 +1615,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/openclaw-agent-masterclass-66d6a4f88cd5",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*oI6MzSkxhQ5PKAsHW8-Eag.png",
       platform: "Medium",
     },
   },
@@ -1518,6 +1629,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source", "Tutorial"],
     external: {
       url: "https://medium.com/towardsdev/hermes-agent-masterclass-full-tutorial-9f682bb28789",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*nNp10k2WuqYowvrxTBWh-g.png",
       platform: "Medium",
     },
   },
@@ -1531,6 +1643,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Claude", "Tutorial"],
     external: {
       url: "https://medium.com/the-first-digit/anthropic-cybersecurity-skills-full-tutorial-4b3621f14c59",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*bSLv9CuQ0hdQ_PLswr6qHw.png",
       platform: "Medium",
     },
   },
@@ -1544,6 +1657,7 @@ const rawPosts = [
     tags: ["AI", "ML", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/build-an-ml-model-that-actually-ships-a-6-step-visual-walkthrough-71f41b79b7a8",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*1UF7_wB8pcJxzS6-f6H6_w.png",
       platform: "Medium",
     },
   },
@@ -1558,6 +1672,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source"],
     external: {
       url: "https://medium.com/towardsdev/hermes-vs-openclaw-gateways-skills-migration-and-when-to-pick-each-919477e3893b",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*MT4tN7fnXzICT1O6FwTXyQ.png",
       platform: "Medium",
     },
   },
@@ -1571,6 +1686,7 @@ const rawPosts = [
     tags: ["AI", "Agents", "Open Source", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/git-for-agent-memory-why-you-should-treat-hermes-skills-like-code-61b03ed6f6b1",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*HHQK7L7-REdQw80dM2AGiA.png",
       platform: "Medium",
     },
   },
@@ -1584,6 +1700,7 @@ const rawPosts = [
     tags: ["Claude", "AI", "DevTools", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/commands-vs-skills-vs-agents-in-claude-code-what-goes-where-a72d11b5281a",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*l4sCiR0ib-rNjYcQ8SphDw.png",
       platform: "Medium",
     },
   },
@@ -1597,6 +1714,7 @@ const rawPosts = [
     tags: ["Local AI", "LLMs", "Agents", "Tutorial"],
     external: {
       url: "https://medium.com/@techlatest.net/your-ai-on-whatsapp-fully-local-powered-by-gemma-dc3aaf4f7097",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*IMKwgD9vdMkvukbUV533Dg.png",
       platform: "Medium",
     },
   },
@@ -1610,6 +1728,7 @@ const rawPosts = [
     tags: ["AI", "RAG", "Agents", "LLMs", "Tutorial"],
     external: {
       url: "https://medium.com/faun/deploy-a-qwen-3-6-agentic-rag-step-by-step-walkthrough-11d2993ff057",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*0bbnhAm37IRWKBB8yPhXQA.png",
       platform: "Medium",
     },
   },
@@ -1623,6 +1742,7 @@ const rawPosts = [
     tags: ["Security", "MCP", "AI", "Claude"],
     external: {
       url: "https://medium.com/the-first-digit/cve-mcp-server-turn-claude-into-a-full-spectrum-security-analyst-42be86718a27",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*TgH_VVk2_dhVW0rxPmVzCg.png",
       platform: "Medium",
     },
   },
@@ -1637,6 +1757,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Claude", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/claude-bughunter-the-open-source-ai-security-agent-that-turns-claude-code-into-a-bug-bounty-b480582a6925",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*MNrboXcDsx3uRK1PBN12OA.png",
       platform: "Medium",
     },
   },
@@ -1651,6 +1772,7 @@ const rawPosts = [
     tags: ["Security", "DevTools", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/cve-lite-cli-the-dependency-scanner-that-actually-tells-you-what-to-run-not-just-whats-broken-f6b518199981",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*DNhreD_uV3I51LpRllhmmQ.png",
       platform: "Medium",
     },
   },
@@ -1664,6 +1786,7 @@ const rawPosts = [
     tags: ["Security", "AI", "Open Source"],
     external: {
       url: "https://medium.com/the-first-digit/ai-security-is-changing-fast-these-6-open-source-tools-prove-it-5c5c9081cff7",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*m7r9pgGdY_IWJquV9ab7bw.png",
       platform: "Medium",
     },
   },
@@ -1678,6 +1801,7 @@ const rawPosts = [
     tags: ["Open Source", "Engineering", "DevTools"],
     external: {
       url: "https://medium.com/faun/12-open-source-github-repos-quietly-replacing-billion-dollar-saas-companies-b064bebfebb6",
+      image: "https://miro.medium.com/v2/resize:fit:700/1*hp8kzW5HODet_9W5C4m5tw.png",
       platform: "Medium",
     },
   },
