@@ -1,4 +1,4 @@
-/** Sharper + uncropped cover for external blog posters (Medium / dev.to). */
+/** Sharper cover URLs for external blog posters (Medium / dev.to). */
 export function coverImageSrc(url: string): string {
   if (url.includes("miro.medium.com")) {
     return url
@@ -15,17 +15,15 @@ export function coverImageSrc(url: string): string {
 
 export default function BlogPostCover({ src }: { src: string }) {
   return (
-    <div className="relative z-10 border-b border-white/10 bg-[#060912]">
-      <div className="flex aspect-[2/1] min-h-[200px] w-full items-center justify-center overflow-hidden p-2 sm:min-h-[240px] sm:p-3">
-        <img
-          src={coverImageSrc(src)}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          referrerPolicy="no-referrer"
-          className="max-h-full max-w-full rounded-lg object-contain object-center shadow-[0_8px_32px_rgba(0,0,0,0.45)] transition-transform duration-500 group-hover:scale-[1.02]"
-        />
-      </div>
+    <div className="relative z-10 aspect-[16/9] w-full shrink-0 overflow-hidden border-b border-white/10 bg-[#060912]">
+      <img
+        src={coverImageSrc(src)}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        referrerPolicy="no-referrer"
+        className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+      />
     </div>
   );
 }
