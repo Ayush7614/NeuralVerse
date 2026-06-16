@@ -7,3 +7,4 @@ node_modules
 dist
 out
 scripts/.post-dates-cache.json
+scripts/.post-images-cache.json

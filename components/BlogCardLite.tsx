@@ -6,12 +6,27 @@ import type { Post } from "@/lib/posts";
 export default function BlogCardLite({ post }: { post: Post }) {
   const isExternal = !!post.external;
   const href = isExternal ? post.external!.url : `/blog/${post.slug}`;
+  const cover = post.external?.image;
 
   return (
-    <article className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-neon-cyan/40 hover:shadow-neon">
+    <article className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-neon-cyan/40 hover:shadow-neon">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-neon-cyan/10 via-transparent to-neon-magenta/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-      <div className="relative z-10 flex h-full flex-col">
+      {cover && (
+        <div className="relative z-10">
+          <div className="aspect-[16/9] w-full overflow-hidden border-b border-white/10 bg-white/[0.02]">
+            <img
+              src={cover}
+              alt=""
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+          </div>
+        </div>
+      )}
+
+      <div className="relative z-10 flex h-full flex-col p-6">
         <div className="mb-4 flex items-center justify-between gap-2 text-xs text-white/50">
           <time className="font-mono" dateTime={post.date}>
             {formatDate(post.date)}

@@ -35,6 +35,7 @@ export default function BlogCard({
 
   const isExternal = !!post.external;
   const href = isExternal ? post.external!.url : `/blog/${post.slug}`;
+  const cover = post.external?.image;
 
   return (
     <motion.article
@@ -50,14 +51,28 @@ export default function BlogCard({
         style={{ rotateX: rotX, rotateY: rotY, transformStyle: "preserve-3d" }}
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18 }}
-        className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-6 backdrop-blur-xl transition-shadow hover:border-neon-cyan/40 hover:shadow-neon"
+        className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-xl transition-shadow hover:border-neon-cyan/40 hover:shadow-neon"
       >
         <motion.div
           style={{ background: spotlight }}
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
         />
 
-        <div className="relative z-10 flex h-full flex-col">
+        {cover && (
+          <div className="relative z-10">
+            <div className="aspect-[16/9] w-full overflow-hidden border-b border-white/10 bg-white/[0.02]">
+              <img
+                src={cover}
+                alt=""
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+            </div>
+          </div>
+        )}
+
+        <div className="relative z-10 flex h-full flex-col p-6">
           <div className="mb-4 flex items-center justify-between gap-2 text-xs text-white/50">
             <time className="font-mono">{formatDate(post.date)}</time>
             <span className="inline-flex items-center gap-1.5">
