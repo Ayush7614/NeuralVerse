@@ -13,7 +13,9 @@ export default function BlogList() {
 
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase();
-    return posts.filter((p) => {
+    return [...posts]
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .filter((p) => {
       const matchTag = !active || p.tags.includes(active);
       const matchQ =
         !query ||

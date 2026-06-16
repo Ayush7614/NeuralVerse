@@ -19,14 +19,14 @@ export type Post = {
  * Every post is owned and authored by Ayush Kumar.
  * External posts open on the original platform in a new tab.
  */
-export const posts: Post[] = [
+const rawPosts = [
   // ──────────────────────────── Batch 3 (dev.to additions) ────────────────────────────
   {
     slug: "how-to-install-run-embeddinggemma-300m-locally",
     title: "How to Install run EmbeddingGemma 300m locally",
     excerpt:
       "Step-by-step walkthrough: How to Install run EmbeddingGemma 300m locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-19",
+    date: "2025-09-08",
     readingTime: 10,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -39,7 +39,7 @@ export const posts: Post[] = [
     title: "The Open Source App Builder that Ate SaaS Dyad Ollama Setup",
     excerpt:
       "Step-by-step walkthrough: The Open Source App Builder that Ate SaaS Dyad Ollama Setup — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-19",
+    date: "2025-08-22",
     readingTime: 11,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -52,7 +52,7 @@ export const posts: Post[] = [
     title: "Zero to Docs Hero Create a Python Documentation Generator with GPT 5",
     excerpt:
       "Step-by-step walkthrough: Zero to Docs Hero Create a Python Documentation Generator with GPT 5 — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-19",
+    date: "2025-08-08",
     readingTime: 12,
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
@@ -65,7 +65,7 @@ export const posts: Post[] = [
     title: "How i Built a GPT OSS 120b Parameter Coding Beast that Reviews Fixes and Writes",
     excerpt:
       "Step-by-step walkthrough: How i Built a GPT OSS 120b Parameter Coding Beast that Reviews Fixes and Writes — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-18",
+    date: "2025-08-07",
     readingTime: 13,
     tags: ["AI", "Tutorial"],
     external: {
@@ -78,7 +78,7 @@ export const posts: Post[] = [
     title: "How to Install Devstral Small 11 locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Devstral Small 11 locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-18",
+    date: "2025-07-12",
     readingTime: 14,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -91,7 +91,7 @@ export const posts: Post[] = [
     title: "LLMs Under Fire Red Teaming with Deepteam Ollama",
     excerpt:
       "Step-by-step walkthrough: LLMs Under Fire Red Teaming with Deepteam Ollama — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-18",
+    date: "2025-06-26",
     readingTime: 15,
     tags: ["Security", "LLMs", "AI"],
     external: {
@@ -104,7 +104,7 @@ export const posts: Post[] = [
     title: "How to Install DeepSeek Nano vLLM locally",
     excerpt:
       "Step-by-step walkthrough: How to Install DeepSeek Nano vLLM locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-17",
+    date: "2025-06-24",
     readingTime: 10,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -117,7 +117,7 @@ export const posts: Post[] = [
     title: "How to Install Fanar 1 9b Arabic English LLM locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Fanar 1 9b Arabic English LLM locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-17",
+    date: "2025-06-18",
     readingTime: 11,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -130,7 +130,7 @@ export const posts: Post[] = [
     title: "How to Install and run Sarvam M locally",
     excerpt:
       "Step-by-step walkthrough: How to Install and run Sarvam M locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-17",
+    date: "2025-06-06",
     readingTime: 12,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -143,7 +143,7 @@ export const posts: Post[] = [
     title: "How to Install NVIDIA Acereason Nemotron 14b locally",
     excerpt:
       "Step-by-step walkthrough: How to Install NVIDIA Acereason Nemotron 14b locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-16",
+    date: "2025-06-04",
     readingTime: 13,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -156,7 +156,7 @@ export const posts: Post[] = [
     title: "How to Install NanoVLM Worlds Smallest Model locally",
     excerpt:
       "Step-by-step walkthrough: How to Install NanoVLM Worlds Smallest Model locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-16",
+    date: "2025-05-20",
     readingTime: 14,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -169,7 +169,7 @@ export const posts: Post[] = [
     title: "How to Install SmolDocling 256m Preview locally",
     excerpt:
       "Step-by-step walkthrough: How to Install SmolDocling 256m Preview locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-16",
+    date: "2025-05-20",
     readingTime: 15,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -182,7 +182,7 @@ export const posts: Post[] = [
     title: "How to Install Qwen3 32b GGUF locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Qwen3 32b GGUF locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-15",
+    date: "2025-05-16",
     readingTime: 10,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -195,7 +195,7 @@ export const posts: Post[] = [
     title: "How to Install Meta Perception Lm 8b locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Meta Perception Lm 8b locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-15",
+    date: "2025-05-13",
     readingTime: 11,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -208,7 +208,7 @@ export const posts: Post[] = [
     title: "How to Install NVIDIA Parakeet Tdt 06b V2 locally",
     excerpt:
       "Step-by-step walkthrough: How to Install NVIDIA Parakeet Tdt 06b V2 locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-15",
+    date: "2025-05-11",
     readingTime: 12,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -221,7 +221,7 @@ export const posts: Post[] = [
     title: "How to Install Nari Dia 16 B locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Nari Dia 16 B locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-14",
+    date: "2025-05-05",
     readingTime: 13,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -234,7 +234,7 @@ export const posts: Post[] = [
     title: "How to Install Falcon 3 locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Falcon 3 locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-14",
+    date: "2025-05-08",
     readingTime: 14,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -247,7 +247,7 @@ export const posts: Post[] = [
     title: "How to Install Google PaliGemma 2 locally",
     excerpt:
       "Step-by-step walkthrough: How to Install Google PaliGemma 2 locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-14",
+    date: "2024-12-18",
     readingTime: 15,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -260,7 +260,7 @@ export const posts: Post[] = [
     title: "Run Langtrace Open Source Observability Tool for LLM Applications",
     excerpt:
       "Step-by-step walkthrough: Run Langtrace Open Source Observability Tool for LLM Applications — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-13",
+    date: "2024-12-02",
     readingTime: 10,
     tags: ["Open Source", "AI", "Tutorial"],
     external: {
@@ -273,7 +273,7 @@ export const posts: Post[] = [
     title: "Running AI Models with Open WebUI",
     excerpt:
       "Step-by-step walkthrough: Running AI Models with Open WebUI — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-13",
+    date: "2024-11-17",
     readingTime: 11,
     tags: ["Open Source", "AI", "Tutorial"],
     external: {
@@ -286,7 +286,7 @@ export const posts: Post[] = [
     title: "40 Linux Commands You Need to Know the Ultimate Guide for Ubuntu Users",
     excerpt:
       "Step-by-step walkthrough: 40 Linux Commands You Need to Know the Ultimate Guide for Ubuntu Users — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-13",
+    date: "2024-08-10",
     readingTime: 12,
     tags: ["DevOps", "Tutorial"],
     external: {
@@ -299,7 +299,7 @@ export const posts: Post[] = [
     title: "Best Low Code Platforms for Building Applications in 2024",
     excerpt:
       "Step-by-step walkthrough: Best Low Code Platforms for Building Applications in 2024 — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-12",
+    date: "2024-08-12",
     readingTime: 13,
     tags: ["AI", "Tutorial"],
     external: {
@@ -312,7 +312,7 @@ export const posts: Post[] = [
     title: "How to Deploy Llama 31 405b in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Llama 31 405b in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-12",
+    date: "2024-08-19",
     readingTime: 14,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -325,7 +325,7 @@ export const posts: Post[] = [
     title: "How to Install and run AuraFlow Image Generator locally",
     excerpt:
       "Step-by-step walkthrough: How to Install and run AuraFlow Image Generator locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-12",
+    date: "2024-09-13",
     readingTime: 15,
     tags: ["AI", "Tutorial", "Local LLMs"],
     external: {
@@ -338,7 +338,7 @@ export const posts: Post[] = [
     title: "How to Deploy Molmo 7b D 0924 in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Molmo 7b D 0924 in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-11",
+    date: "2024-10-11",
     readingTime: 10,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -351,7 +351,7 @@ export const posts: Post[] = [
     title: "How to Configure WireGuard VPN in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Configure WireGuard VPN in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-11",
+    date: "2024-10-18",
     readingTime: 11,
     tags: ["DevOps", "Tutorial"],
     external: {
@@ -364,7 +364,7 @@ export const posts: Post[] = [
     title: "How to Deploy Llama 31 Nemotron 70b Instruct on a Virtual Machine in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Llama 31 Nemotron 70b Instruct on a Virtual Machine in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-11",
+    date: "2024-10-21",
     readingTime: 12,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -377,7 +377,7 @@ export const posts: Post[] = [
     title: "How to Deploy Pixtral 12b in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Pixtral 12b in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-10",
+    date: "2024-10-18",
     readingTime: 13,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -390,7 +390,7 @@ export const posts: Post[] = [
     title: "Running a Dedicated Ethereum RPC Node in a Virtual Machine",
     excerpt:
       "Step-by-step walkthrough: Running a Dedicated Ethereum RPC Node in a Virtual Machine — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-10",
+    date: "2024-10-18",
     readingTime: 14,
     tags: ["DevOps", "Tutorial"],
     external: {
@@ -403,7 +403,7 @@ export const posts: Post[] = [
     title: "How to Deploy Granite Moe 1b and 3b in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Granite Moe 1b and 3b in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-10",
+    date: "2024-10-23",
     readingTime: 15,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -416,7 +416,7 @@ export const posts: Post[] = [
     title: "How to Deploy Solar Pro 22b in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Solar Pro 22b in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-09",
+    date: "2024-10-25",
     readingTime: 10,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -429,7 +429,7 @@ export const posts: Post[] = [
     title: "How to Deploy Granite Dense 2b and 8b on a Virtual Machine in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy Granite Dense 2b and 8b on a Virtual Machine in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-09",
+    date: "2024-10-28",
     readingTime: 11,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -442,7 +442,7 @@ export const posts: Post[] = [
     title: "How to run for Inference Llama 31 Nemotron 51b Instruct",
     excerpt:
       "Step-by-step walkthrough: How to run for Inference Llama 31 Nemotron 51b Instruct — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-09",
+    date: "2024-11-03",
     readingTime: 12,
     tags: ["AI", "Tutorial"],
     external: {
@@ -455,7 +455,7 @@ export const posts: Post[] = [
     title: "How to Install Minikube on Ubuntu Virtual Machine",
     excerpt:
       "Step-by-step walkthrough: How to Install Minikube on Ubuntu Virtual Machine — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-08",
+    date: "2024-11-06",
     readingTime: 13,
     tags: ["DevOps", "Tutorial"],
     external: {
@@ -468,7 +468,7 @@ export const posts: Post[] = [
     title: "How to Deploy InternVL2 2b in the cloud",
     excerpt:
       "Step-by-step walkthrough: How to Deploy InternVL2 2b in the cloud — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-08",
+    date: "2024-11-08",
     readingTime: 14,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -481,7 +481,7 @@ export const posts: Post[] = [
     title: "How to Deploy SmolLM2 17b on a Virtual Machine in the cloud with Ollama",
     excerpt:
       "Step-by-step walkthrough: How to Deploy SmolLM2 17b on a Virtual Machine in the cloud with Ollama — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-08",
+    date: "2024-11-14",
     readingTime: 15,
     tags: ["Cloud", "AI", "Tutorial"],
     external: {
@@ -494,7 +494,7 @@ export const posts: Post[] = [
     title: "How to Install run Microsoft Kosmos 25 locally",
     excerpt:
       "Step-by-step walkthrough: How to Install run Microsoft Kosmos 25 locally — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-07",
+    date: "2025-09-08",
     readingTime: 10,
     tags: ["Local LLMs", "Tutorial", "AI"],
     external: {
@@ -507,7 +507,7 @@ export const posts: Post[] = [
     title: "DeepSeek V31 Meets Promptfoo Jailbreaks Biases Beyond",
     excerpt:
       "Step-by-step walkthrough: DeepSeek V31 Meets Promptfoo Jailbreaks Biases Beyond — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-07",
+    date: "2025-08-31",
     readingTime: 11,
     tags: ["Security", "LLMs", "AI"],
     external: {
@@ -520,7 +520,7 @@ export const posts: Post[] = [
     title: "The GPT 5 Paradox Genius in Thought Gaps in Safety",
     excerpt:
       "Step-by-step walkthrough: The GPT 5 Paradox Genius in Thought Gaps in Safety — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-07",
+    date: "2025-08-14",
     readingTime: 12,
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
@@ -533,7 +533,7 @@ export const posts: Post[] = [
     title: "Reproducible LLM Benchmarking GPT 5 vs Grok 4 with Promptfoo",
     excerpt:
       "Step-by-step walkthrough: Reproducible LLM Benchmarking GPT 5 vs Grok 4 with Promptfoo — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-06",
+    date: "2025-08-26",
     readingTime: 13,
     tags: ["Security", "LLMs", "AI"],
     external: {
@@ -546,7 +546,7 @@ export const posts: Post[] = [
     title: "The OCR Model that Outranks GPT 4o",
     excerpt:
       "Step-by-step walkthrough: The OCR Model that Outranks GPT 4o — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-06",
+    date: "2025-08-22",
     readingTime: 14,
     tags: ["AI", "Tutorial", "Local LLMs"],
     external: {
@@ -559,7 +559,7 @@ export const posts: Post[] = [
     title: "The One Click GPT 5 Code Machine how i Built my Own AI Developer",
     excerpt:
       "Step-by-step walkthrough: The One Click GPT 5 Code Machine how i Built my Own AI Developer — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-06",
+    date: "2025-08-08",
     readingTime: 15,
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
@@ -572,7 +572,7 @@ export const posts: Post[] = [
     title: "100 Game Changing Chatgpt Prompts for Developers Product Managers Designers and",
     excerpt:
       "Step-by-step walkthrough: 100 Game Changing Chatgpt Prompts for Developers Product Managers Designers and — install, configure, and run with notes from hands-on testing.",
-    date: "2026-05-05",
+    date: "2024-08-11",
     readingTime: 10,
     tags: ["AI", "Tutorial", "DevTools"],
     external: {
@@ -588,7 +588,7 @@ export const posts: Post[] = [
       "Medusa AI Security Scanner: Complete Guide to Securing AI Agents, MCP Servers & LLM Applications",
     excerpt:
       "A complete walkthrough of Medusa — scanning AI agents, MCP servers, and LLM apps for misconfigurations, prompt injection surfaces, and deployment risks.",
-    date: "2026-05-18",
+    date: "2026-05-13",
     readingTime: 14,
     tags: ["Security", "AI", "MCP", "LLMs"],
     external: {
@@ -602,7 +602,7 @@ export const posts: Post[] = [
       "TradingAgents: Build a Multi-Agent AI Trading System That Thinks Like a Hedge Fund",
     excerpt:
       "Architecting a multi-agent trading stack — research agents, risk agents, execution agents, and the orchestration layer that makes them behave like a desk.",
-    date: "2026-05-17",
+    date: "2026-05-02",
     readingTime: 13,
     tags: ["AI", "Agents", "Tutorial"],
     external: {
@@ -616,7 +616,7 @@ export const posts: Post[] = [
       "Pentest AI: The Complete Guide to AI-Powered Autonomous Penetration Testing in 2026",
     excerpt:
       "How autonomous AI pentesting actually works in 2026 — tooling, workflows, guardrails, and what to expect when you point an agent at your own perimeter.",
-    date: "2026-05-16",
+    date: "2026-05-14",
     readingTime: 15,
     tags: ["Security", "AI", "Agents"],
     external: {
@@ -630,7 +630,7 @@ export const posts: Post[] = [
       "The Ultimate Guide to Hacker Search Engines & OSINT Tools in 2026",
     excerpt:
       "The OSINT stack I reach for in 2026 — hacker search engines, dorking patterns, and practical recon workflows for security researchers.",
-    date: "2026-05-15",
+    date: "2026-05-12",
     readingTime: 12,
     tags: ["Security", "Tutorial"],
     external: {
@@ -644,7 +644,7 @@ export const posts: Post[] = [
       "Pentest AI Agents: 28 Specialized AI Subagents That Turn Claude Code Into a Cybersecurity Team",
     excerpt:
       "28 purpose-built subagents for offensive security — recon, exploit chaining, reporting — all orchestrated through Claude Code.",
-    date: "2026-05-14",
+    date: "2026-05-01",
     readingTime: 14,
     tags: ["Security", "AI", "Agents", "DevTools"],
     external: {
@@ -658,7 +658,7 @@ export const posts: Post[] = [
       "25 Open-Source Cybersecurity Tools That Work Even When Your Budget Doesn't",
     excerpt:
       "Twenty-five OSS security tools that punch above their price tag — free, battle-tested, and enough to run a lean security program.",
-    date: "2026-05-13",
+    date: "2026-04-28",
     readingTime: 13,
     tags: ["Security", "Open Source"],
     external: {
@@ -672,7 +672,7 @@ export const posts: Post[] = [
       "The Solo Engineer Stack: How 10 Open-Source Repos Can Replace an Entire Engineering Team in 2026",
     excerpt:
       "Ten repos that cover the full solo-engineer surface area — from CI to observability to AI agents — without hiring a team.",
-    date: "2026-05-12",
+    date: "2026-04-23",
     readingTime: 11,
     tags: ["Open Source", "Engineering", "AI"],
     external: {
@@ -686,7 +686,7 @@ export const posts: Post[] = [
       "These 6 Open-Source AI Agents Are Next Level — and They're Changing How We Build Software",
     excerpt:
       "Six agent frameworks that are quietly reshaping how teams ship — not demos, but tools people actually run in production.",
-    date: "2026-05-11",
+    date: "2026-04-21",
     readingTime: 10,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -700,7 +700,7 @@ export const posts: Post[] = [
       "I Replaced Codex with Gemma 4 + Ollama — Here's My Local AI Coding Agent",
     excerpt:
       "Swapping cloud Codex for a fully local Gemma 4 + Ollama coding agent — setup, prompts, and where it wins (and where it doesn't).",
-    date: "2026-05-10",
+    date: "2026-04-15",
     readingTime: 11,
     tags: ["Local AI", "LLMs", "DevTools"],
     external: {
@@ -714,7 +714,7 @@ export const posts: Post[] = [
       "Emerging AI Agent Frameworks Developers Should Watch in 2026 (Part 2)",
     excerpt:
       "Part two of the agent framework roundup — newer entrants, architecture patterns, and which ones are worth betting on this year.",
-    date: "2026-05-09",
+    date: "2026-04-14",
     readingTime: 12,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -728,7 +728,7 @@ export const posts: Post[] = [
       "AI Web Browsers & Agents in 2026: The Complete Selection Guide",
     excerpt:
       "Every serious AI browser and web-agent option in 2026 — compared on privacy, autonomy, extensibility, and real-world usefulness.",
-    date: "2026-05-08",
+    date: "2026-04-13",
     readingTime: 13,
     tags: ["AI", "Agents", "Tutorial"],
     external: {
@@ -742,7 +742,7 @@ export const posts: Post[] = [
       "The Open-Source Claude Managed Agents Alternative Is Here — Meet Multica",
     excerpt:
       "Multica as an OSS answer to managed Claude agents — architecture, setup, and how it compares for teams that want control.",
-    date: "2026-05-07",
+    date: "2026-04-10",
     readingTime: 10,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -756,7 +756,7 @@ export const posts: Post[] = [
       "Mastra AI: The Modern Framework for Building Production-Ready AI Agents",
     excerpt:
       "A hands-on tour of Mastra — workflows, memory, tool calling, and the patterns that make agents production-grade instead of demo-grade.",
-    date: "2026-05-06",
+    date: "2026-04-09",
     readingTime: 11,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -770,7 +770,7 @@ export const posts: Post[] = [
       "GAIA by AMD: Running Intelligent Systems Fully on Your Own Machine",
     excerpt:
       "AMD's GAIA stack for running intelligent workloads locally — hardware sizing, install, and the use cases where on-device wins.",
-    date: "2026-05-05",
+    date: "2026-04-08",
     readingTime: 10,
     tags: ["Local AI", "AI", "Tutorial"],
     external: {
@@ -784,7 +784,7 @@ export const posts: Post[] = [
       "Top 19 LLM Observability Tools to Monitor & Evaluate AI Agents (2026 Guide)",
     excerpt:
       "Nineteen tools for tracing, evaluating, and debugging LLM agents in production — with notes on when each one actually earns its keep.",
-    date: "2026-05-04",
+    date: "2026-04-03",
     readingTime: 15,
     tags: ["AI", "LLMs", "Agents", "DevOps"],
     external: {
@@ -798,7 +798,7 @@ export const posts: Post[] = [
       "The Open-Source AI Agent Frameworks That Deserve More Stars on GitHub",
     excerpt:
       "Underrated agent frameworks hiding in plain sight — why they matter, what they do differently, and links to get started.",
-    date: "2026-05-03",
+    date: "2026-04-02",
     readingTime: 11,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -812,7 +812,7 @@ export const posts: Post[] = [
       "Archinstall 4.0: A Modern New Way to Install Arch Linux — Full Guide & Features",
     excerpt:
       "Archinstall 4.0 makes Arch approachable again — full feature tour, install walkthrough, and the defaults I'd change on day one.",
-    date: "2026-05-02",
+    date: "2026-03-31",
     readingTime: 12,
     tags: ["Tutorial", "DevOps"],
     external: {
@@ -826,7 +826,7 @@ export const posts: Post[] = [
       "Cybersecurity AI (CAI): The Future of AI-Powered Security Automation",
     excerpt:
       "CAI and the shift toward AI-native security automation — what it automates, what it can't, and how teams should adopt it.",
-    date: "2026-05-01",
+    date: "2026-03-30",
     readingTime: 11,
     tags: ["Security", "AI", "Agents"],
     external: {
@@ -840,7 +840,7 @@ export const posts: Post[] = [
       "AgentScope: Building Real-World AI Agents That Actually Work",
     excerpt:
       "AgentScope for multi-agent apps that survive contact with reality — roles, messaging, failure handling, and a working example.",
-    date: "2026-04-30",
+    date: "2026-03-27",
     readingTime: 11,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -854,7 +854,7 @@ export const posts: Post[] = [
       "OpenViking Explained: Reinventing Memory and Context for AI Agents",
     excerpt:
       "How OpenViking rethinks agent memory beyond flat vector stores — context layers, retrieval, and why it matters for long-running agents.",
-    date: "2026-04-29",
+    date: "2026-03-25",
     readingTime: 10,
     tags: ["AI", "Agents", "LLMs"],
     external: {
@@ -868,7 +868,7 @@ export const posts: Post[] = [
       "Strix: The Open-Source Hacker That Tests Your App Like a Real Attacker",
     excerpt:
       "Strix as an autonomous offensive testing tool — setup, attack surfaces it finds, and how to run it safely against your own apps.",
-    date: "2026-04-28",
+    date: "2026-03-23",
     readingTime: 11,
     tags: ["Security", "AI", "Open Source"],
     external: {
@@ -882,7 +882,7 @@ export const posts: Post[] = [
       "The Modern Mobile Pentesting Stack in 2026: Tools, Trends & Practical Workflows",
     excerpt:
       "The mobile pentest toolchain for 2026 — static, dynamic, network, and the workflows that tie them together on real engagements.",
-    date: "2026-04-27",
+    date: "2026-03-21",
     readingTime: 13,
     tags: ["Security", "Tutorial"],
     external: {
@@ -896,7 +896,7 @@ export const posts: Post[] = [
       "The Rise of AI-Driven Pentesting: 8 Open-Source Tools Security Teams Should Watch in 2026",
     excerpt:
       "Eight OSS tools bringing AI into the pentest workflow — recon, exploitation assist, reporting — and how to evaluate them responsibly.",
-    date: "2026-04-26",
+    date: "2026-03-19",
     readingTime: 12,
     tags: ["Security", "AI", "Open Source"],
     external: {
@@ -910,7 +910,7 @@ export const posts: Post[] = [
       "Hindsight: The Future of AI Agent Memory Beyond Vector Databases",
     excerpt:
       "Hindsight's approach to durable agent memory — episodic recall, structured context, and why vectors alone aren't enough.",
-    date: "2026-04-25",
+    date: "2026-03-17",
     readingTime: 10,
     tags: ["AI", "Agents", "LLMs"],
     external: {
@@ -924,7 +924,7 @@ export const posts: Post[] = [
       "OpenClaw: The Journey From a Weekend Hack to a Personal AI Platform You Truly Own",
     excerpt:
       "How OpenClaw grew from a weekend project into a self-hosted personal AI platform — architecture, philosophy, and getting started.",
-    date: "2026-04-24",
+    date: "2026-02-02",
     readingTime: 11,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -938,7 +938,7 @@ export const posts: Post[] = [
       "11 Production LLM Serving Engines: vLLM vs TGI vs Ollama and Beyond",
     excerpt:
       "Eleven serving engines compared for production — throughput, ops burden, GPU efficiency, and which I'd pick for each workload.",
-    date: "2026-04-23",
+    date: "2026-01-12",
     readingTime: 14,
     tags: ["LLMs", "DevOps", "Local AI"],
     external: {
@@ -952,7 +952,7 @@ export const posts: Post[] = [
       "AI Agent Arsenal: 20 Battle-Tested Open-Source Powerhouses",
     excerpt:
       "Twenty OSS projects that form a complete agent-building arsenal — orchestration, tools, memory, eval, and deployment.",
-    date: "2026-04-22",
+    date: "2025-12-31",
     readingTime: 13,
     tags: ["AI", "Agents", "Open Source"],
     external: {
@@ -967,7 +967,7 @@ export const posts: Post[] = [
     title: "The MCP Server Stack: 10 Open-Source Essentials for 2026",
     excerpt:
       "The Model Context Protocol ecosystem has exploded. Here are the 10 open-source MCP servers I'd put in every agent stack going into 2026.",
-    date: "2026-02-10",
+    date: "2025-12-19",
     readingTime: 14,
     tags: ["MCP", "AI", "Agents", "Open Source"],
     external: {
@@ -981,7 +981,7 @@ export const posts: Post[] = [
       "20 Free Open-Source AI Tools to Run Production-Grade Agents Without Paying LLM APIs in 2026",
     excerpt:
       "A field guide to running production-grade autonomous agents on zero API spend — 20 hand-picked open-source tools, real workflows, and the gotchas nobody mentions.",
-    date: "2026-01-22",
+    date: "2026-01-08",
     readingTime: 16,
     tags: ["AI", "Agents", "Open Source", "Local AI"],
     external: {
@@ -994,7 +994,7 @@ export const posts: Post[] = [
     title: "The Untold Misadventures of Red-Teaming Kimi K2 with Promptfoo",
     excerpt:
       "I spent a week trying to break Moonshot's Kimi K2 with Promptfoo. Here's where it cracked, where it surprised me, and what I'd put in a red-team playbook.",
-    date: "2026-01-08",
+    date: "2025-07-31",
     readingTime: 11,
     tags: ["Red Teaming", "Security", "LLMs", "Promptfoo"],
     external: {
@@ -1008,7 +1008,7 @@ export const posts: Post[] = [
       "Promptfoo × Qwen3-Coder: Unmasking Vulnerabilities in 480 Billion Parameters",
     excerpt:
       "Pointing Promptfoo at Qwen3-Coder 480B-A35B revealed a surprising attack surface. Walking through the audit, the findings, and the patterns that repeat across frontier coder models.",
-    date: "2025-12-18",
+    date: "2025-08-01",
     readingTime: 13,
     tags: ["Red Teaming", "Security", "LLMs", "Promptfoo"],
     external: {
@@ -1021,7 +1021,7 @@ export const posts: Post[] = [
     title: "GLM-4.5 vs Promptfoo: A Playbook for Systematic LLM Security Audits",
     excerpt:
       "A repeatable playbook for security-auditing any LLM — demonstrated end-to-end on GLM-4.5 using Promptfoo. Test plans, harnesses, and how to read the signal.",
-    date: "2025-12-04",
+    date: "2025-08-03",
     readingTime: 12,
     tags: ["Red Teaming", "Security", "LLMs", "Promptfoo"],
     external: {
@@ -1034,7 +1034,7 @@ export const posts: Post[] = [
     title: "LLMs Under Fire: Red Teaming with DeepTeam + Ollama",
     excerpt:
       "Setting up DeepTeam against local Ollama models to stress-test prompt injection, jailbreaks, and harmful-output rates — all without leaving your laptop.",
-    date: "2025-11-22",
+    date: "2025-06-26",
     readingTime: 10,
     tags: ["Red Teaming", "Security", "Local AI", "LLMs"],
     external: {
@@ -1048,7 +1048,7 @@ export const posts: Post[] = [
       "Promptfoo vs DeepTeam vs PyRIT vs Garak: The Ultimate Red-Teaming Showdown for LLMs",
     excerpt:
       "Four major open-source LLM red-teaming frameworks, one merciless head-to-head. Coverage, ergonomics, plugin ecosystem, and which I'd actually ship with.",
-    date: "2025-11-08",
+    date: "2025-07-01",
     readingTime: 15,
     tags: ["Red Teaming", "Security", "LLMs", "Open Source"],
     external: {
@@ -1062,7 +1062,7 @@ export const posts: Post[] = [
       "Promptfoo × Ollama × DeepSeek-R1: Turning My Model Into a Cyber Warzone",
     excerpt:
       "DeepSeek-R1 is impressive — and a great red-team target. Here's the full Promptfoo + Ollama harness I used to stress-test reasoning, refusals, and exploits.",
-    date: "2025-10-24",
+    date: "2025-07-02",
     readingTime: 11,
     tags: ["Red Teaming", "LLMs", "Local AI", "Promptfoo"],
     external: {
@@ -1075,7 +1075,7 @@ export const posts: Post[] = [
     title: "From OpenAI to Ollama: Visual LLM Evaluations with Promptfoo",
     excerpt:
       "Side-by-side visual evaluations of OpenAI hosted models and local Ollama runs — how to build a faithful eval harness when ground truth is fuzzy.",
-    date: "2025-10-10",
+    date: "2025-06-29",
     readingTime: 9,
     tags: ["LLMs", "Local AI", "Promptfoo", "Tutorial"],
     external: {
@@ -1089,7 +1089,7 @@ export const posts: Post[] = [
       "How I Built and Evaluated an AI Book-Writing System with ACP and Promptfoo",
     excerpt:
       "An honest engineering diary on shipping an AI book-writing pipeline — Agent Communication Protocol, evaluator harness, and the failure modes that surprised me.",
-    date: "2025-09-26",
+    date: "2025-07-20",
     readingTime: 13,
     tags: ["AI", "Agents", "LLMs", "Promptfoo"],
     external: {
@@ -1104,7 +1104,7 @@ export const posts: Post[] = [
     title: "How to Install & Run OpenAI GPT-OSS Locally",
     excerpt:
       "OpenAI shipped GPT-OSS — and yes, you can run it on your own metal. The complete setup, hardware sizing, and the inference tricks that matter.",
-    date: "2025-09-12",
+    date: "2025-08-06",
     readingTime: 10,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1117,7 +1117,7 @@ export const posts: Post[] = [
     title: "How to Install & Run GPT-OSS 20B and 120B GGUF Locally",
     excerpt:
       "Going beyond the base GPT-OSS — running the 20B and full 120B GGUF builds locally with sane quantization, sane VRAM, and reproducible benchmarks.",
-    date: "2025-09-04",
+    date: "2025-08-11",
     readingTime: 11,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1130,7 +1130,7 @@ export const posts: Post[] = [
     title: "How to Install & Run Qwen3-Coder 480B A35B Instruct Locally",
     excerpt:
       "Wrangling Qwen3-Coder's 480B MoE on local hardware: weight layout, KV-cache strategies, and the dev workflow that actually keeps the model fast.",
-    date: "2025-08-22",
+    date: "2025-08-11",
     readingTime: 12,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1143,7 +1143,7 @@ export const posts: Post[] = [
     title: "How to Install & Run DeepSeek V3.1 GGUF Locally",
     excerpt:
       "DeepSeek V3.1 in GGUF form is a strong daily driver. Hardware sizing, quant trade-offs, and an end-to-end install walkthrough.",
-    date: "2025-08-08",
+    date: "2025-09-01",
     readingTime: 9,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1156,7 +1156,7 @@ export const posts: Post[] = [
     title: "Claude 4 Opus vs Sonnet: Benchmarks and Dev Workflow with Claude Code",
     excerpt:
       "Side-by-side benchmarks of Claude 4 Opus and Sonnet, with a practical Claude Code workflow that gets the most out of each tier.",
-    date: "2025-07-26",
+    date: "2025-05-24",
     readingTime: 10,
     tags: ["LLMs", "DevTools", "AI"],
     external: {
@@ -1170,7 +1170,7 @@ export const posts: Post[] = [
       "Ultimate Hands-On Guide to OpenCode: Open-Source Claude Code Alternative",
     excerpt:
       "OpenCode is the open-source coding agent that finally feels like Claude Code. A complete hands-on guide — install, configure, hook up local models.",
-    date: "2025-07-12",
+    date: "2026-03-16",
     readingTime: 11,
     tags: ["DevTools", "Open Source", "AI", "Tutorial"],
     external: {
@@ -1184,7 +1184,7 @@ export const posts: Post[] = [
       "Void + Ollama + LLMs: How I Turned My Code Editor Into a Full-Blown AI Workbench",
     excerpt:
       "Void is an open-source Cursor-style editor. Wired to Ollama, it becomes a local AI workbench that doesn't phone home. Full setup inside.",
-    date: "2025-06-28",
+    date: "2025-05-26",
     readingTime: 9,
     tags: ["DevTools", "Local AI", "Open Source"],
     external: {
@@ -1198,7 +1198,7 @@ export const posts: Post[] = [
       "Zed + Ollama + LLMs on a GPU VM: The Ultimate Local Dev Setup for Serious Coders",
     excerpt:
       "Zed is fast, Ollama is portable, and a GPU VM is finally cheap. Here's the dev setup I run all day — IDE, model server, and the network glue.",
-    date: "2025-06-14",
+    date: "2025-05-29",
     readingTime: 10,
     tags: ["DevTools", "Local AI", "DevOps"],
     external: {
@@ -1212,7 +1212,7 @@ export const posts: Post[] = [
       "Build an App with AI in Minutes Using OpenHands AI Engineer: Install Locally",
     excerpt:
       "OpenHands lets you ship working apps with an autonomous engineer agent. The install, the workflows, and the prompts I've found ship 10x more reliably.",
-    date: "2025-05-30",
+    date: "2024-11-13",
     readingTime: 11,
     tags: ["Agents", "AI", "Open Source", "DevTools"],
     external: {
@@ -1225,7 +1225,7 @@ export const posts: Post[] = [
     title: "Step-by-Step Guide to Run Llama 4 Locally with Tool Calling Enabled",
     excerpt:
       "Llama 4 is here — and it's tool-calling-native. Setting it up locally end-to-end, with a working agentic loop and traces you can inspect.",
-    date: "2025-05-16",
+    date: "2025-06-05",
     readingTime: 11,
     tags: ["Local AI", "LLMs", "Agents", "Tutorial"],
     external: {
@@ -1238,7 +1238,7 @@ export const posts: Post[] = [
     title: "How to Install Llama 3.3 70B Instruct Locally",
     excerpt:
       "Llama 3.3 70B Instruct is the sweet-spot OSS model for most workloads. Full local-install guide with quantization and serving tips.",
-    date: "2025-05-02",
+    date: "2024-12-18",
     readingTime: 9,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1252,7 +1252,7 @@ export const posts: Post[] = [
       "Mastering DeepSeek: Installing Tiny, Small, and VL2 Models with Inference and a Gradio Interface",
     excerpt:
       "A complete tour of the DeepSeek lineup — Tiny, Small, and VL2 — with reproducible inference scripts and a Gradio UI for quick experiments.",
-    date: "2025-04-18",
+    date: "2025-02-06",
     readingTime: 12,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1265,7 +1265,7 @@ export const posts: Post[] = [
     title: "How to Install DeepSeek Janus-Pro 7B Locally",
     excerpt:
       "DeepSeek Janus-Pro 7B is a strong multimodal model. The full install, weights layout, and a minimal inference example you can build on.",
-    date: "2025-04-04",
+    date: "2025-01-28",
     readingTime: 8,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1278,7 +1278,7 @@ export const posts: Post[] = [
     title: "How to Deploy Qwen2.5-Coder-32B-Instruct in the Cloud",
     excerpt:
       "A pragmatic cloud-deploy walkthrough for Qwen2.5-Coder-32B-Instruct — sizing, serving, and the cost-vs-throughput knobs that matter.",
-    date: "2025-03-22",
+    date: "2024-11-22",
     readingTime: 9,
     tags: ["LLMs", "DevOps", "Tutorial"],
     external: {
@@ -1291,7 +1291,7 @@ export const posts: Post[] = [
     title: "Ollama and Web-LLM: Building Your Own Local AI Search Assistant",
     excerpt:
       "Combine Ollama with Web-LLM to build a local AI search assistant — private, fast, and bookmark-friendly. The full architecture and code inside.",
-    date: "2025-03-08",
+    date: "2024-11-29",
     readingTime: 10,
     tags: ["Local AI", "LLMs", "Agents", "Tutorial"],
     external: {
@@ -1304,7 +1304,7 @@ export const posts: Post[] = [
     title: "How to Install Mistral Magistral Locally",
     excerpt:
       "Mistral Magistral is the model I keep coming back to for reasoning tasks. A clean, reproducible local-install guide with serving notes.",
-    date: "2025-02-22",
+    date: "2025-09-17",
     readingTime: 8,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1317,7 +1317,7 @@ export const posts: Post[] = [
     title: "How to Install Mistral Voxtral Locally",
     excerpt:
       "Mistral Voxtral brings speech-native intelligence to local stacks. A complete install + first-app guide with audio pipelines.",
-    date: "2025-02-08",
+    date: "2025-07-18",
     readingTime: 9,
     tags: ["Local AI", "LLMs", "Tutorial"],
     external: {
@@ -1332,7 +1332,7 @@ export const posts: Post[] = [
     title: "How to Install & Run Tencent Hunyuan3D-World 1.0 Locally",
     excerpt:
       "Tencent's Hunyuan3D-World 1.0 turns text into navigable 3D scenes. The local install, GPU sizing, and a first scene-generation walkthrough.",
-    date: "2025-01-25",
+    date: "2025-01-21",
     readingTime: 11,
     tags: ["Image Gen", "AI", "Tutorial"],
     external: {
@@ -1345,7 +1345,7 @@ export const posts: Post[] = [
     title: "How to Install FLUX.1 Kontext Dev Locally",
     excerpt:
       "FLUX.1 Kontext Dev is a context-aware image model that punches above its weight. Full local install and a workflow notebook to copy.",
-    date: "2025-01-12",
+    date: "2025-07-02",
     readingTime: 9,
     tags: ["Image Gen", "Local AI", "Tutorial"],
     external: {
@@ -1358,7 +1358,7 @@ export const posts: Post[] = [
     title: "How to Run FLUX.1 Schnell and Pro Image Generator in the Cloud",
     excerpt:
       "Running FLUX.1 Schnell and Pro on a GPU VM with sensible defaults, queueing, and a UI you can put in front of a team.",
-    date: "2024-12-20",
+    date: "2024-08-28",
     readingTime: 10,
     tags: ["Image Gen", "Cloud", "Tutorial"],
     external: {
@@ -1373,7 +1373,7 @@ export const posts: Post[] = [
     title: "Building an AI-Powered Chest X-Ray Analyzer with MedGemma 27B and Gradio",
     excerpt:
       "An end-to-end build of a chest X-ray analyzer using Google's MedGemma 27B and Gradio — model loading, preprocessing, and a usable clinician-facing UI.",
-    date: "2024-12-06",
+    date: "2025-07-12",
     readingTime: 12,
     tags: ["AI", "LLMs", "Tutorial"],
     external: {
@@ -1402,7 +1402,7 @@ export const posts: Post[] = [
     title: "VulHunt: Open-Source Vulnerability Hunting Framework",
     excerpt:
       "VulHunt — an open-source framework for hunting vulnerabilities at scale. Architecture, plugin model, and how I use it on bug-bounty engagements.",
-    date: "2024-11-08",
+    date: "2026-03-17",
     readingTime: 9,
     tags: ["Security", "Open Source"],
     external: {
@@ -1415,7 +1415,7 @@ export const posts: Post[] = [
     title: "Top 50 Must-Know BlackArch Linux Tools for Penetration Testing",
     excerpt:
       "The 50 BlackArch tools I reach for most on penetration tests — what each does, when to use it, and the command patterns I keep cheat-sheeted.",
-    date: "2024-10-24",
+    date: "2026-02-06",
     readingTime: 18,
     tags: ["Security", "Tutorial"],
     external: {
@@ -1429,7 +1429,7 @@ export const posts: Post[] = [
       "Top 15 Kali Linux GUI Tools Every Security Engineer Must Master — With Real Use Cases",
     excerpt:
       "Beyond the terminal — the 15 Kali GUI tools every security engineer should be fluent with, each illustrated with a real engagement scenario.",
-    date: "2024-10-10",
+    date: "2026-01-05",
     readingTime: 13,
     tags: ["Security", "Tutorial"],
     external: {
@@ -1444,7 +1444,7 @@ export const posts: Post[] = [
     title: "Running a Dedicated Ethereum RPC Node in a Virtual Machine",
     excerpt:
       "Operating a dedicated Ethereum RPC node on a VM — disk planning, snapshot tactics, peering, and the monitoring that catches bad sync states early.",
-    date: "2024-09-26",
+    date: "2024-10-18",
     readingTime: 12,
     tags: ["DevOps", "Cloud"],
     external: {
@@ -1458,7 +1458,7 @@ export const posts: Post[] = [
       "How to Backup Virtual Machines to Object Storage with Borg, Borgmatic, Rclone, and Cron's Rsync",
     excerpt:
       "A complete backup architecture for VMs into S3-compatible object storage — Borg + Borgmatic + Rclone + cron rsync, with the restore drill I run quarterly.",
-    date: "2024-09-12",
+    date: "2024-11-16",
     readingTime: 14,
     tags: ["DevOps", "Tutorial"],
     external: {
@@ -1466,7 +1466,11 @@ export const posts: Post[] = [
       platform: "NodeShift",
     },
   },
-];
+] as Post[];
+
+rawPosts.sort((a, b) => b.date.localeCompare(a.date));
+
+export const posts: Post[] = rawPosts;
 
 export const allTags = Array.from(
   new Set(posts.flatMap((p) => p.tags))

@@ -44,7 +44,7 @@ export default function Hero() {
         >
           <Sparkles size={12} className="text-neon-cyan" />
           <span className="font-mono tracking-wider">
-            v1.0 · est. 2026 · transmitting…
+            v2.0 · est. 2026 · transmitting…
           </span>
         </motion.div>
 
