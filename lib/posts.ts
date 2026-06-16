@@ -1466,6 +1466,221 @@ const rawPosts = [
       platform: "NodeShift",
     },
   },
+
+  // ──────────────────────────── June 2026 (Medium batch 4) ────────────────────────────
+  {
+    slug: "loop-engineering-goal-driven-ai-agents",
+    title:
+      "Loop Engineering Explained Visually: From Manual Prompts to Goal-Driven AI Agents",
+    excerpt:
+      "A visual guide to loop engineering — how to move from one-off prompts to goal-driven agents that plan, act, and iterate until the job is done.",
+    date: "2026-06-16",
+    readingTime: 10,
+    tags: ["AI", "Agents", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/loop-engineering-explained-visually-from-manual-prompts-to-goal-driven-ai-agents-f2c4d634c261",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "when-to-fine-tune-llm-vs-prompting",
+    title: "When to Fine-Tune an LLM (And When Prompting Is Enough)",
+    excerpt:
+      "A practical decision framework for fine-tuning vs prompting — data requirements, cost, latency, and the cases where each approach actually wins.",
+    date: "2026-06-15",
+    readingTime: 13,
+    tags: ["AI", "LLMs", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/when-to-fine-tune-an-llm-and-when-prompting-is-enough-c32d53261ac7",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "openclaw-agent-masterclass",
+    title: "OpenClaw Agent Masterclass — Full Tutorial",
+    excerpt:
+      "A complete OpenClaw walkthrough — setup, skills, gateways, and the patterns for running a personal AI platform you actually own.",
+    date: "2026-06-12",
+    readingTime: 12,
+    tags: ["AI", "Agents", "Open Source", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/openclaw-agent-masterclass-66d6a4f88cd5",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "hermes-agent-masterclass",
+    title: "Hermes Agent Masterclass — Full Tutorial",
+    excerpt:
+      "End-to-end Hermes agent tutorial — memory, skills, tool use, and production patterns for building agents that hold context across sessions.",
+    date: "2026-06-12",
+    readingTime: 10,
+    tags: ["AI", "Agents", "Open Source", "Tutorial"],
+    external: {
+      url: "https://medium.com/towardsdev/hermes-agent-masterclass-full-tutorial-9f682bb28789",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "anthropic-cybersecurity-skills-tutorial",
+    title: "Anthropic Cybersecurity Skills — Full Tutorial",
+    excerpt:
+      "How to use Anthropic's cybersecurity skills in Claude — threat modeling, code review, incident response workflows, and real security automation.",
+    date: "2026-06-11",
+    readingTime: 13,
+    tags: ["Security", "AI", "Claude", "Tutorial"],
+    external: {
+      url: "https://medium.com/the-first-digit/anthropic-cybersecurity-skills-full-tutorial-4b3621f14c59",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "build-ml-model-that-ships",
+    title: "Build an ML Model That Actually Ships: A 6-Step Visual Walkthrough",
+    excerpt:
+      "Six visual steps from notebook to production — data, training, evaluation, packaging, deployment, and monitoring without the usual ML theatre.",
+    date: "2026-06-10",
+    readingTime: 7,
+    tags: ["AI", "ML", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/build-an-ml-model-that-actually-ships-a-6-step-visual-walkthrough-71f41b79b7a8",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "hermes-vs-openclaw-gateways-skills-migration",
+    title:
+      "Hermes vs OpenClaw: Gateways, Skills, Migration, and When to Pick Each",
+    excerpt:
+      "Comparing Hermes and OpenClaw — gateway architecture, skills models, migration paths, and which platform fits local-first vs managed agent workflows.",
+    date: "2026-06-09",
+    readingTime: 8,
+    tags: ["AI", "Agents", "Open Source"],
+    external: {
+      url: "https://medium.com/towardsdev/hermes-vs-openclaw-gateways-skills-migration-and-when-to-pick-each-919477e3893b",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "git-for-agent-memory-hermes-skills",
+    title: "Git for Agent Memory: Why You Should Treat Hermes Skills Like Code",
+    excerpt:
+      "Version-controlling agent skills and memory like source code — branching, diffs, rollbacks, and why git semantics map cleanly onto agent state.",
+    date: "2026-06-08",
+    readingTime: 8,
+    tags: ["AI", "Agents", "Open Source", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/git-for-agent-memory-why-you-should-treat-hermes-skills-like-code-61b03ed6f6b1",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "commands-vs-skills-vs-agents-claude-code",
+    title: "Commands vs Skills vs Agents in Claude Code — What Goes Where",
+    excerpt:
+      "Where commands, skills, and agents belong in Claude Code — boundaries, composition patterns, and how to avoid turning every shortcut into an agent.",
+    date: "2026-06-05",
+    readingTime: 8,
+    tags: ["Claude", "AI", "DevTools", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/commands-vs-skills-vs-agents-in-claude-code-what-goes-where-a72d11b5281a",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "whatsapp-ai-fully-local-gemma",
+    title: "Your AI on WhatsApp — Fully Local, Powered by Gemma",
+    excerpt:
+      "Running a fully local Gemma-powered assistant on WhatsApp — bridge setup, privacy boundaries, and a stack that never phones home.",
+    date: "2026-06-04",
+    readingTime: 6,
+    tags: ["Local AI", "LLMs", "Agents", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/your-ai-on-whatsapp-fully-local-powered-by-gemma-dc3aaf4f7097",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "deploy-qwen-3-6-agentic-rag",
+    title: "Deploy a Qwen 3.6 Agentic RAG — Step-by-Step Walkthrough",
+    excerpt:
+      "Building and deploying an agentic RAG pipeline on Qwen 3.6 — retrieval, tool routing, evaluation hooks, and a production-minded layout.",
+    date: "2026-06-03",
+    readingTime: 6,
+    tags: ["AI", "RAG", "Agents", "LLMs", "Tutorial"],
+    external: {
+      url: "https://medium.com/faun/deploy-a-qwen-3-6-agentic-rag-step-by-step-walkthrough-11d2993ff057",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "cve-mcp-server-security-analyst",
+    title: "CVE MCP Server: Turn Claude Into a Full-Spectrum Security Analyst",
+    excerpt:
+      "Wiring CVE intelligence into Claude via MCP — dependency graphs, exploit context, and analyst workflows that go beyond a flat scanner report.",
+    date: "2026-06-01",
+    readingTime: 12,
+    tags: ["Security", "MCP", "AI", "Claude"],
+    external: {
+      url: "https://medium.com/the-first-digit/cve-mcp-server-turn-claude-into-a-full-spectrum-security-analyst-42be86718a27",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "claude-bughunter-ai-security-agent",
+    title:
+      "Claude-BugHunter: The Open-Source AI Security Agent That Turns Claude Code Into a Bug Bounty Hunter",
+    excerpt:
+      "Claude-BugHunter in practice — autonomous recon, vulnerability hypotheses, and the guardrails that keep an AI bug bounty agent useful instead of noisy.",
+    date: "2026-05-25",
+    readingTime: 11,
+    tags: ["Security", "AI", "Claude", "Open Source"],
+    external: {
+      url: "https://medium.com/the-first-digit/claude-bughunter-the-open-source-ai-security-agent-that-turns-claude-code-into-a-bug-bounty-b480582a6925",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "cve-lite-cli-dependency-scanner",
+    title:
+      "CVE Lite CLI: The Dependency Scanner That Actually Tells You What to Run, Not Just What's Broken",
+    excerpt:
+      "CVE Lite CLI focuses on actionable output — which CVEs matter, what to upgrade first, and the commands to run instead of drowning you in JSON.",
+    date: "2026-05-25",
+    readingTime: 9,
+    tags: ["Security", "DevTools", "Open Source"],
+    external: {
+      url: "https://medium.com/the-first-digit/cve-lite-cli-the-dependency-scanner-that-actually-tells-you-what-to-run-not-just-whats-broken-f6b518199981",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "ai-security-6-open-source-tools",
+    title: "AI Security Is Changing Fast — These 6 Open-Source Tools Prove It",
+    excerpt:
+      "Six open-source projects reshaping AI security — from agent guardrails to MCP scanners and the tooling stack security teams are adopting in 2026.",
+    date: "2026-05-22",
+    readingTime: 10,
+    tags: ["Security", "AI", "Open Source"],
+    external: {
+      url: "https://medium.com/the-first-digit/ai-security-is-changing-fast-these-6-open-source-tools-prove-it-5c5c9081cff7",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "12-open-source-github-repos-replacing-saas",
+    title:
+      "12 Open-Source GitHub Repos Quietly Replacing Billion-Dollar SaaS Companies",
+    excerpt:
+      "Twelve GitHub repos doing serious SaaS displacement — auth, observability, databases, and the open-source alternatives worth self-hosting today.",
+    date: "2026-05-21",
+    readingTime: 5,
+    tags: ["Open Source", "Engineering", "DevTools"],
+    external: {
+      url: "https://medium.com/faun/12-open-source-github-repos-quietly-replacing-billion-dollar-saas-companies-b064bebfebb6",
+      platform: "Medium",
+    },
+  },
 ] as Post[];
 
 rawPosts.sort((a, b) => b.date.localeCompare(a.date));
