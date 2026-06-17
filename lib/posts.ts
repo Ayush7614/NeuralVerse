@@ -1577,6 +1577,20 @@ const rawPosts = [
 
   // ──────────────────────────── June 2026 (Medium batch 4) ────────────────────────────
   {
+    slug: "ai-agents-masterclass-full-visual-guide",
+    title: "AI Agents Masterclass — Full Visual Guide",
+    excerpt:
+      "Everything you need to understand, compare, and build AI agents — ReAct and ReWOO loops, multi-agent patterns, 15+ frameworks, MCP and A2A protocols, governance, and five runnable examples with visual diagrams.",
+    date: "2026-06-17",
+    readingTime: 22,
+    tags: ["AI", "Agents", "Tutorial", "Open Source"],
+    external: {
+      url: "https://medium.com/@techlatest.net/ai-agents-masterclass-full-visual-guide-25245fbae260",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*SbCxBnRWucCtWPRyBR9fOg.png",
+      platform: "Medium",
+    },
+  },
+  {
     slug: "harness-engineering-full-visual-guide",
     title: "Harness Engineering — Full Visual Guide",
     excerpt:
