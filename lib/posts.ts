@@ -1577,6 +1577,20 @@ const rawPosts = [
 
   // ──────────────────────────── June 2026 (Medium batch 4) ────────────────────────────
   {
+    slug: "model-context-protocol-mcp-full-visual-guide",
+    title: "Model Context Protocol (MCP) — Full Visual Guide",
+    excerpt:
+      "Connect AI hosts like Cursor, Claude Desktop, and VS Code Copilot to your databases, repos, APIs, and files through a standard wire protocol — the USB-C for AI apps, with hosts, clients, servers, and the three core primitives.",
+    date: "2026-06-19",
+    readingTime: 8,
+    tags: ["AI", "MCP", "Agents", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/model-context-protocol-mcp-full-visual-guide-ffbbf2121c38",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*yOIn1CQEqgYU0HjB1NFSYg.png",
+      platform: "Medium",
+    },
+  },
+  {
     slug: "ai-agents-masterclass-full-visual-guide",
     title: "AI Agents Masterclass — Full Visual Guide",
     excerpt:
