@@ -107,6 +107,7 @@ function PlatformBadge({ platform }: { platform: string }) {
     "dev.to": "bg-white/[0.06] text-white/80 border-white/10",
     Medium: "bg-neon-lime/10 text-neon-lime border-neon-lime/30",
     NodeShift: "bg-neon-magenta/10 text-neon-magenta border-neon-magenta/30",
+    "MCP Wormhole": "bg-neon-cyan/10 text-neon-cyan border-neon-cyan/30",
   };
   const classes =
     styles[platform] || "bg-white/[0.06] text-white/70 border-white/10";

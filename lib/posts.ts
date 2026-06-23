@@ -1,4 +1,4 @@
-export type Platform = "dev.to" | "Medium" | "NodeShift";
+export type Platform = "dev.to" | "Medium" | "NodeShift" | "MCP Wormhole";
 
 export type Post = {
   slug: string;
@@ -1572,6 +1572,129 @@ const rawPosts = [
       url: "https://nodeshift.com/blog/how-to-backup-virtual-machines-to-object-storage-with-borg-borgmatic-rclone-and-crons-rsync",
       image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnp3mis8r4e413hrqdlee.jpg",
       platform: "NodeShift",
+    },
+  },
+
+  // ──────────────────────────── June 2026 (MiniCPM-V + mcp-wormhole) ────────────────────────────
+  {
+    slug: "minicpm-v-mcp-server-give-your-agent-eyes",
+    title: "MiniCPM-V MCP Server — Give Your Agent Eyes",
+    excerpt:
+      "Build an MCP server that exposes describe_image, ocr_document, and compare_images so any MCP host — Cursor, Claude Desktop, Hermes — can understand screenshots, receipts, and UI diffs through one protocol.",
+    date: "2026-06-23",
+    readingTime: 12,
+    tags: ["AI", "MCP", "Agents", "Tutorial"],
+    external: {
+      url: "https://medium.com/@techlatest.net/minicpm-v-mcp-server-give-your-agent-eyes-cffb455b30a4",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*3k62GpbdLJcoX9Qk4uUUZQ.png",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "private-photo-assistant-telegram-openclaw-minicpm-v",
+    title:
+      "Build a Private Photo Assistant on Telegram with OpenClaw + MiniCPM-V 4.6",
+    excerpt:
+      "A fully local photo assistant — receive images from Telegram, WhatsApp, or CLI, analyze them with MiniCPM-V 4.6 on Ollama, and return summaries, OCR, and suggested replies without images leaving your machine.",
+    date: "2026-06-23",
+    readingTime: 7,
+    tags: ["Local AI", "Agents", "Tutorial", "Open Source"],
+    external: {
+      url: "https://medium.com/@techlatest.net/build-a-private-photo-assistant-on-telegram-with-openclaw-minicpm-v-4-6-61942273cbbc",
+      image: "https://miro.medium.com/v2/resize:fit:1200/1*J7QjvPLOiqVv6u6516Ucqw.png",
+      platform: "Medium",
+    },
+  },
+  {
+    slug: "connect-vercel-to-cursor",
+    title: "Connect Vercel to Cursor in 5 minutes",
+    excerpt:
+      "Complete walkthrough: API token setup, mcp.json config, verification, example prompts, and troubleshooting for Cursor + Vercel MCP.",
+    date: "2026-06-23",
+    readingTime: 8,
+    tags: ["MCP", "Cursor", "Vercel", "Tutorial"],
+    external: {
+      url: "https://ayush7614.github.io/mcp-wormhole/#/blog/connect-vercel-to-cursor",
+      image:
+        "https://ayush7614.github.io/mcp-wormhole/demo/posters/poster-connect-vercel-cursor.gif",
+      platform: "MCP Wormhole",
+    },
+  },
+  {
+    slug: "inside-vercel-mcp-server",
+    title:
+      "Inside @mcp-wormhole/vercel: 18 tools, 8 prompts, and browsable resources",
+    excerpt:
+      "Deep dive into the Vercel MCP server — architecture, deployment tools, prompt workflows, vercel:// resources, and live API verification.",
+    date: "2026-06-23",
+    readingTime: 14,
+    tags: ["MCP", "Vercel", "Architecture", "Open Source"],
+    external: {
+      url: "https://ayush7614.github.io/mcp-wormhole/#/blog/inside-vercel-mcp-server",
+      image:
+        "https://ayush7614.github.io/mcp-wormhole/demo/posters/poster-inside-vercel-mcp.gif",
+      platform: "MCP Wormhole",
+    },
+  },
+  {
+    slug: "inside-asana-mcp-server",
+    title:
+      "Inside @mcp-wormhole/asana: 66 tools, 18 prompts, and browsable resources",
+    excerpt:
+      "Deep dive into the Asana MCP server — architecture, tool categories, prompt workflows, asana:// resources, and how we verify against the live API.",
+    date: "2026-06-22",
+    readingTime: 16,
+    tags: ["MCP", "Asana", "Architecture", "Open Source"],
+    external: {
+      url: "https://ayush7614.github.io/mcp-wormhole/#/blog/inside-asana-mcp-server",
+      image:
+        "https://ayush7614.github.io/mcp-wormhole/demo/posters/poster-inside-asana-mcp.gif",
+      platform: "MCP Wormhole",
+    },
+  },
+  {
+    slug: "building-an-mcp-server",
+    title: "Building your first MCP server in mcp-wormhole",
+    excerpt:
+      "From template to npm: package structure, tool design, prompts, resources, verification, and the PR checklist for new integrations.",
+    date: "2026-06-20",
+    readingTime: 14,
+    tags: ["MCP", "TypeScript", "Architecture", "Open Source"],
+    external: {
+      url: "https://ayush7614.github.io/mcp-wormhole/#/blog/building-an-mcp-server",
+      image:
+        "https://ayush7614.github.io/mcp-wormhole/demo/posters/poster-building-mcp-server.gif",
+      platform: "MCP Wormhole",
+    },
+  },
+  {
+    slug: "connect-asana-to-cursor",
+    title: "Connect Asana to Cursor in 5 minutes",
+    excerpt:
+      "Complete walkthrough: PAT setup, mcp.json config, verification, example prompts, and troubleshooting for Cursor + Asana MCP.",
+    date: "2026-06-18",
+    readingTime: 10,
+    tags: ["MCP", "Cursor", "Asana", "Tutorial"],
+    external: {
+      url: "https://ayush7614.github.io/mcp-wormhole/#/blog/connect-asana-to-cursor",
+      image:
+        "https://ayush7614.github.io/mcp-wormhole/demo/posters/poster-connect-asana-cursor.gif",
+      platform: "MCP Wormhole",
+    },
+  },
+  {
+    slug: "introducing-mcp-wormhole",
+    title: "Introducing mcp-wormhole: MCP servers for every tool",
+    excerpt:
+      "Why we built an open-source monorepo of MCP servers, how the architecture works, and what's shipping first on npm.",
+    date: "2026-06-15",
+    readingTime: 12,
+    tags: ["MCP", "Architecture", "Open Source"],
+    external: {
+      url: "https://ayush7614.github.io/mcp-wormhole/#/blog/introducing-mcp-wormhole",
+      image:
+        "https://ayush7614.github.io/mcp-wormhole/demo/posters/poster-introducing-mcp-wormhole.gif",
+      platform: "MCP Wormhole",
     },
   },
 
